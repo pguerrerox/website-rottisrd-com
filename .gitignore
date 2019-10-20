@@ -1,0 +1,12 @@
+#folders
+node_modules
+.cache
+dist
+src/.temp
+
+
+#files
+.DS_Store
+*.log
+.env
+.env.*
