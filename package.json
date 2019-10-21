@@ -1,5 +1,5 @@
 {
-  "name": "x",
+  "name": "com-rottis",
   "private": true,
   "scripts": {
     "build": "gridsome build",
