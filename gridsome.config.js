@@ -6,5 +6,6 @@
 
 module.exports = {
   siteName: 'Rottis',
+  siteUrl: 'https://www.rottisrd.com.do',
   plugins: []
 }

@@ -1,12 +1,11 @@
 #folders
-node_modules
 .cache
 dist
+node_modules
 src/.temp
 
 
 #files
 .DS_Store
-*.log
 .env
-.env.*
+*.log
