@@ -2,15 +2,18 @@
   <div class="layout">
     <Header />
     <slot/>
+    <Footer />
   </div>
 </template>
 
 <script>
   import Header from '~/components/Header.vue';
+  import Footer from '~/components/Footer.vue';
 
   export default {
     components: {
-      Header
+      Header,
+      Footer
     }
   }
 </script>
@@ -32,21 +35,10 @@ body {
 }
 
 .layout {
-  max-width: 760px;
+  width: 100%;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
 }
 </style>
