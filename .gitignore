@@ -3,9 +3,12 @@
 dist
 node_modules
 src/.temp
+.vscode
 
 
 #files
 .DS_Store
 .env
 *.log
+
+

@@ -4,6 +4,10 @@
   </layout>
 </template>
 
+<style scoped>
+
+</style>
+
 <script>
 export default {
   metaInfo: {
@@ -11,7 +15,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
