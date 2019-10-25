@@ -6,6 +6,22 @@
   </div>
 </template>
 
+<style>
+  body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin:0;
+    padding:0;
+    line-height: 1.5;
+  }
+  .layout {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
+
 <script>
   import Header from '~/components/Header.vue';
   import Footer from '~/components/Footer.vue';
@@ -25,20 +41,3 @@ query {
   }
 }
 </static-query>
-
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-</style>

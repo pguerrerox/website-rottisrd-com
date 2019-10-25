@@ -1,14 +1,15 @@
 <template>
   <header class="header">
     <div class="header-content">
-      <!-- <img src="" alt=""> -->
-      <g-image src="~/assets/images/logo.png" width="140px" alt="logo" background="#ffffff" quality="100" blur="50" />
+      <g-link to="/">
+        <g-image src="~/assets/images/logo.png" width="140px" alt="logo" background="#ffffff" quality="100" blur="50" />
+      </g-link>
       <nav class="nav">
         <g-link class="nav-link" to="/">Inicio</g-link>
-        <g-link class="nav-link" to="/sobre-nosotros">Sobre Nosotros</g-link>
-        <g-link class="nav-link" to="/nuestra-gente">Nuestra Gente</g-link>
+        <!-- <g-link class="nav-link" to="/sobre-nosotros">sobre nosotros</g-link> -->
+        <!-- <g-link class="nav-link" to="/nuestra-gente">nuestra gente</g-link> -->
         <g-link class="nav-link" to="/nuestros-productos">Nuestros Productos</g-link>
-        <g-link class="nav-link" to="/contactos">Contactos</g-link>
+        <g-link class="nav-link" to="/about/">Contactos</g-link>
       </nav>
     </div>
   </header>
@@ -38,9 +39,12 @@
     text-transform: capitalize;
     color: #999999;
   }
-  .nav-link.active{
+  .nav-link.active--exact{
     color: #c00000;
     font-weight: bold;
+  }
+  .nav-link:hover{
+    color:#c00000;
   }
 </style>
 

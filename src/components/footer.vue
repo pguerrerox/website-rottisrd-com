@@ -11,15 +11,30 @@
       </div>
       <div class="quater">
         <h3>Numero de Contacto</h3>
-        <div class="info">Tel.: 809-571-9821</div>
+        <div class="info">
+          <a href="tel:809-571-9821" target="_blank" title="Click para llamar">
+            Tel: 809-571-9821
+          </a> 
+        </div>
       </div>
       <div class="quater">
         <h3>Correo electrónico</h3>
-        <div class="info">Info@rottisrd.com.do</div>
+        <div class="info">
+          <a href="mailto:info@rottisrd.com.do" target="_blank" title="Click para enviar email">
+            info@rottisrd.com.do
+          </a>
+        </div>
       </div>
       <div class="quater">
         <h3>Redes Sociales</h3>
-        <div class="info">facebook | instagram</div>
+        <div class="info">
+          <a href="#">
+            <g-image class="social-logo" src="~/assets/images/facebook.png" width="30" quality="100" alt="facebook logo"/>
+          </a>
+          <a href="#">
+            <g-image class="social-logo" src="~/assets/images/instagram.png" width="30" quality="100" alt="instagram logo"/>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
@@ -50,8 +65,16 @@
   .quater h3, .info{
     text-align: center;
   }
-  .quater .info{
+  .quater .info a{
+    text-decoration: none;
+    color: #ffffff;
     font-size: 1.05em;
+  }
+  .quater .info a:hover{
+    color: #c00000;
+  }
+  .social-logo{
+    padding: 0 5px;
   }
 </style>
 
