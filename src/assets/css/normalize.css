@@ -32,14 +32,34 @@ main {
   display: block;
 }
 
+/* Fonts */
+@font-face {
+  font-family: 'markinson';
+  src: url('../fonts/Markinson.otf');
+}
+@font-face{
+  font-family: 'gotham';
+  src: url('../fonts/Gotham-Book.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'gotham';
+  src: url('../fonts/Gotham-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-family: markinson;
+  font-size: 3.5em;
+  font-weight: normal;
+  margin: 0.25em 0;
 }
 
 /* Grouping content

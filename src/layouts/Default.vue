@@ -8,10 +8,10 @@
 
 <style>
   body {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: "gotham";
     margin:0;
     padding:0;
-    line-height: 1.5;
+    /* line-height: 1.5; */
   }
   .layout {
     width: 100%;
@@ -20,6 +20,7 @@
     flex-direction: column;
     align-items: center;
   }
+  
 </style>
 
 <script>

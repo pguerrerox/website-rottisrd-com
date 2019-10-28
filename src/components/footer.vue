@@ -44,7 +44,7 @@
   .footer{
     width: 100%;
     min-height: 250px;
-    background-color: #333333;
+    background-color: #c00000;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@
     font-size: 1.05em;
   }
   .quater .info a:hover{
-    color: #c00000;
+    color: #1f1f1f;
   }
   .social-logo{
     padding: 0 5px;
