@@ -20,7 +20,19 @@
     flex-direction: column;
     align-items: center;
   }
-  
+  h1 {
+  font-family: markinson;
+  font-size: 3.5em;
+  font-weight: normal;
+  margin: 0.25em 0;
+  color: #c00000;
+  }
+  h3{
+    font-size: 1.5em;
+    /* color: #999999; */
+    font-weight: normal;
+    margin: 5px 0;
+  }
 </style>
 
 <script>

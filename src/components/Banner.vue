@@ -35,33 +35,32 @@
     justify-content: center;
     align-items: center;
   }
-  .banner-content h1{
-    color:#c00000;
-  }
   .banner-content p{
     width: 75%;
     font-size: 1.2em;
     padding: 0 30px;
     text-align: justify;
-    text-justify: distribute;
   }
   .banner-content p strong{
     color:#c00000;
   }
   a.button{
-    background-color: #c00000 !important; 
+    background-color: #c00000; 
     color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
     margin: 15px;
   }
+  a.button:hover{
+    background-color: #ffffff;
+    border-right: 2px solid #c00000;
+    border-left: 2px solid #c00000;
+    color: #c00000;
+  }
 </style>
 
 <script>
-
 export default {
   
 }
 </script>
-
-
