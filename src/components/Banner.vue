@@ -2,7 +2,9 @@
   <section class="banner">
     <div class="banner-wraper">
       <div class="banner-content">
-        <h1>¿Quienes somos?</h1>
+        <h1> Condicion {{toview}}, {{id+1}} vs {{idx}} </h1>
+        <h1 v-if="id+1 === idx">{{h1}} </h1>
+        <!-- <h1>¿Quienes somos?</h1> -->
         <p>La <strong>fábrica de quesos Rottis</strong> nace en el pueblo pequeño de Luperón, Puerto Plata; con la visión de producir quesos dominicanos de la más alta calidad para su exportación hacia los estados unidos.</p>
         <a href="#" class="button">Descubre mas sobre nosotros</a>
       </div>
@@ -60,7 +62,23 @@
 </style>
 
 <script>
+import content from "~/data/content.json"
+
 export default {
-  
+  props: {
+    id: Number
+  },
+  data: function(){
+    return{
+      idx: content.es.banners[this.id].id,
+      h1: content.es.banners[this.id].h1,
+      p: content.es.banners[this.id].p
+    }
+  },
+  computed:{
+    toview: function(){
+      return this.id === this.idx
+    }
+  }
 }
 </script>
