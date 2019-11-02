@@ -6,10 +6,10 @@
       </g-link>
       <nav class="nav">
         <g-link class="nav-link" to="/">Inicio</g-link>
-        <!-- <g-link class="nav-link" to="/sobre-nosotros">sobre nosotros</g-link> -->
-        <!-- <g-link class="nav-link" to="/nuestra-gente">nuestra gente</g-link> -->
-        <g-link class="nav-link" to="/nuestros-productos">Nuestros Productos</g-link>
-        <g-link class="nav-link" to="/about/">Contactos</g-link>
+        <g-link class="nav-link" to="/nosotros">Sobre Nosotros</g-link>
+        <g-link class="nav-link" to="/gente">Nuestra Gente</g-link>
+        <g-link class="nav-link" to="/productos">Nuestros Productos</g-link>
+        <g-link class="nav-link" to="/contacto/">Contactos</g-link>
       </nav>
     </div>
   </header>
