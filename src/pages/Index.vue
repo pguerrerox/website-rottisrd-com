@@ -7,10 +7,6 @@
 	</layout>
 </template>
 
-<style scoped>
-
-</style>
-
 <script>
 import Banner from "~/components/Banner.vue"
 import Sign from "~/components/Sign.vue"
@@ -25,3 +21,7 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+
+</style>

@@ -7,5 +7,13 @@ Repository dedicated to the development of the website `https://www.rottisrd.com
 - Gridsome
 
 
-
 Happy coding!
+
+
+### Challenges
+1. **Fetching data from a json file**
+
+
+2. **Using the gridsome tag <g-image> together with Vue directive <v-for>**
+
+

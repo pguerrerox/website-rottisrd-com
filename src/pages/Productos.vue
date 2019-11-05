@@ -1,18 +1,24 @@
 <template>
-  <Layout>
-    <h1>Productos</h1>
-  </Layout>
+	<Layout>
+		<h1>Productos</h1>
+		<Slideshow />
+	
+	</Layout>
 </template>
 
-<style scoped>
-
-</style>
-
 <script>
+import Slideshow from "~/components/Slideshow.vue";
+
 export default {
-  metaInfo: {
-    title: 'Nuestros Productos'
-  }
+	components: {
+		Slideshow
+	},
+	metaInfo: {
+		title: 'Nuestros Productos'
+	}
 }
 </script>
  
+<style scoped>
+
+</style>
