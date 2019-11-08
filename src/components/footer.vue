@@ -5,24 +5,24 @@
 				<h3>Dirección</h3>
 				<div class="info">
 					<a href="https://goo.gl/maps/CuuVm1yrwCBo5XHA6" target="_blank" title="Click para abrir en Google Maps">
-	            La Sabana, Luperón Puerto Plata, República Dominicana
-	          </a>
+		            La Sabana, Luperón Puerto Plata, República Dominicana
+		          </a>
 				</div>
 			</div>
 			<div class="quater">
 				<h3>Numero de Contacto</h3>
 				<div class="info">
 					<a href="tel:809-571-9821" target="_blank" title="Click para llamar">
-	            Tel: 809-571-9821
-	          </a>
+		            Tel: 809-571-9821
+		          </a>
 				</div>
 			</div>
 			<div class="quater">
 				<h3>Correo electrónico</h3>
 				<div class="info">
 					<a href="mailto:info@rottisrd.com.do" target="_blank" title="Click para enviar email">
-	            info@rottisrd.com.do
-	          </a>
+		            info@rottisrd.com.do
+		          </a>
 				</div>
 			</div>
 			<div class="quater">
@@ -39,12 +39,6 @@
 		</div>
 	</footer>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style scoped>
 .footer {

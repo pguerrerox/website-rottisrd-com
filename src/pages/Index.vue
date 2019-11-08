@@ -1,9 +1,9 @@
 <template>
 	<layout>
-		<Banner :id="0" />
-		<Sign :id="0" />
 		<Banner :id="1" />
 		<Sign :id="1" />
+		<Banner :id="2" />
+		<Sign :id="2" />
 	</layout>
 </template>
 
@@ -21,7 +21,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-
-</style>

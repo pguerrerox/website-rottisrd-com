@@ -24,7 +24,7 @@ export default {
 		id: Number
 	},
 	data: function() {
-		const localData = content.es.banners[this.id];
+		const localData = content.es.banners[this.id-1];
 		return {
 			idx: localData.id,
 			h1: localData.h1,

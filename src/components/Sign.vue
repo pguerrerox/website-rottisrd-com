@@ -29,15 +29,14 @@ export default {
 		id: Number,
 	},
 	data: function() {
-		let localData = content.es.signs[this.id];
+		let localData = content.es.signs[this.id-1];
 		return {
 			idx: localData.id,
 			h1: localData.h1,
 			h3: localData.h3,
 			imgs: localData.imgs
 		}
-	},
-	computed: {}
+	}
 }
 </script>
 
