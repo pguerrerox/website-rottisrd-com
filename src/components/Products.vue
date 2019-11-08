@@ -1,15 +1,60 @@
 <template>
-	<section class="">
-
+	<section class="banner-products">
+		<!-- :style="{'background-image': 'url(' + require('../assets/images/banner'+id+'.png')+')'}" -->
+		<div class="products-wraper" v-for="producto in productos" :key="producto.id" :style="{'background-image': 'url(' + require('../assets/images/productos/'+producto.bgimage+'bg.png')+')'}">
+			<div class="products-content">
+				<g-image :src="require('!!assets-loader?width=150!~/assets/images/logos/'+producto.logo+'.png')" />
+				<g-link to="" class="button">{{producto.button}}</g-link>	
+			</div>
+		</div>
 	</section>
 </template>
 
 <script>
-export default {
+import content from "~/data/content.json";
 
+export default {
+	// idea: usar el link o titulo de la pagina para fetchear info desde el documento de contenido.... usarlo como prop...
+	props: {
+		data: Object,
+	},
+	data: function(){
+		let localData = this.data
+		return{
+			productos: localData.products,
+		}
+	},
+	computed:{}
 }
 </script>
 
-<style>
+<style scoped>
+section.banner-products{
+	width: 100%;
+	/* background-color: bisque; */
+}
+.products-wraper{
+	width: 100%;
+	height: 490px;
+	/* background-color:blueviolet; */
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin:5px 0;
+	 
+}
+.products-content{
+	width: 670px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.50);
+}
+
 
 </style>

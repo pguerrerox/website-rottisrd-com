@@ -1,31 +1,30 @@
-// NOTE to self
-// check the slider DATA, is hard coded on this file.... check how to bring it from the data.json
-
 <template>
 	<Layout>
-		<h1>Productos</h1>
-		<Slideshow :imgs="slideImages"  />
-		<Sign :id="2" />
+		<Slideshow :data="data" />
+		<Sign :id="1" :data="data" />
+		<Products :data="data" />
 	
 	</Layout>
 </template>
 
 <script>
+// data
+import content from "~/data/content.json"
+
+// components
 import Slideshow from "~/components/Slideshow.vue";
-import Sign from "~/components/Sign.vue"
+import Sign from "~/components/Sign.vue";
+import Products from "~/components/Products.vue";
 
 export default {
 	components: {
 		Slideshow,
-		Sign
+		Sign,
+		Products
 	},
-	data: function(){
-		return{
-			slideImages:[
-				"banner0.png",
-				"banner1.png",
-				"banner2.png"
-			],
+	data: function() {
+		return {
+			data: content.es.productos, //productos data in the JSON file.
 		}
 	},
 	metaInfo: {

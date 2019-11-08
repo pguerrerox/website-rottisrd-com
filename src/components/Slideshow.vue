@@ -12,11 +12,14 @@
 <script>
 export default {
 	props: {
-		imgs: Array,
+		data: Object,
+		// imgs: Array,
 	},
 	data: function() {
+		let imagesPath = this.data;
 		return {
 			slideshowPos: 0,
+			imgs: imagesPath.slideshow,
 			// timer: null,
 		}
 	},
@@ -45,6 +48,7 @@ export default {
 	overflow: hidden;
 	position: relative;
 }
+
 .circles {
 	display: flex;
 	flex-direction: column;
@@ -54,6 +58,7 @@ export default {
 	left: 95%;
 	z-index: 5;
 }
+
 .dots {
 	background-color: rgb(255, 255, 255);
 	width: 15px;
@@ -63,14 +68,17 @@ export default {
 	border-radius: 50%;
 	/* border: solid 1px #ccc; */
 }
+
 .active {
 	background-color: rgba(255, 255, 255, 0);
 	border: solid 1px #fff;
 }
+
 .images {
 	width: inherit;
 	height: 100%;
 }
+
 .slides-imgs {
 	width: fit-content;
 	height: inherit;
@@ -80,12 +88,14 @@ export default {
 }
 
 /* Fading animation */
+
 .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: s;
 	animation-name: fade;
 	animation-duration: 0.5s;
 }
+
 @-webkit-keyframes fade {
 	from {
 		opacity: .6
@@ -94,6 +104,7 @@ export default {
 		opacity: 1
 	}
 }
+
 @keyframes fade {
 	from {
 		opacity: .6

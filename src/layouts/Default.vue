@@ -1,7 +1,7 @@
 <template>
 	<div class="layout">
 		<Header />
-		<slot/>
+		<slot />
 		<Footer />
 	</div>
 </template>
@@ -14,7 +14,10 @@ export default {
 	components: {
 		Header,
 		Footer
-	}
+	},
+	props:{
+		page: String
+	},
 }
 </script>
 
@@ -44,6 +47,22 @@ h3 {
 	/* color: #999999; */
 	font-weight: normal;
 	margin: 5px 0;
+}
+
+/* buttons */
+a.button {
+	background-color: #c00000;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 15px;
+	margin: 15px;
+}
+
+a.button:hover {
+	background-color: #ffffff;
+	border-right: 2px solid #c00000;
+	border-left: 2px solid #c00000;
+	color: #c00000;
 }
 </style>
 
