@@ -1,9 +1,10 @@
 <template>
 	<layout>
-		<Banner :id="1" :data="data" />
+		<Slideshow :data="slides" />
 		<Sign :id="1" :data="data" />
-		<Banner :id="2" :data="data" />
+		<Banner :id="1" :data="data" />
 		<Sign :id="2" :data="data" />
+		<Banner :id="2" :data="data" />
 	</layout>
 </template>
 
@@ -14,16 +15,23 @@ import content from "~/data/content.json"
 // components
 import Banner from "~/components/Banner.vue"
 import Sign from "~/components/Sign.vue"
+import Slideshow from "~/components/Slideshow.vue"
 
 
 export default {
 	components: {
 		Banner,
-		Sign
+		Sign,
+		Slideshow,
+	},
+	props:{
+		page: String
 	},
 	data: function() {
 		return {
-			data: content.es.index,	//index data in the JSON file.
+			// keep an eye on these pointers, if JSON structure changes, these must change accordingly
+			data: content.es.index,
+			slides: content.es.productos,
 		}
 	},
 	metaInfo: {

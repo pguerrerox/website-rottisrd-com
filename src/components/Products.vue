@@ -3,8 +3,8 @@
 		<!-- :style="{'background-image': 'url(' + require('../assets/images/banner'+id+'.png')+')'}" -->
 		<div class="products-wraper" v-for="producto in productos" :key="producto.id" :style="{'background-image': 'url(' + require('../assets/images/productos/'+producto.bgimage+'bg.png')+')'}">
 			<div class="products-content">
-				<g-image :src="require('!!assets-loader?width=150!~/assets/images/logos/'+producto.logo+'.png')" />
-				<g-link to="" class="button">{{producto.button}}</g-link>	
+				<g-image class="content-logo" :src="require('!!assets-loader!~/assets/images/logos/'+producto.logo+'.png')" />
+				<g-link to="" class="button">{{producto.button}}</g-link>
 			</div>
 		</div>
 	</section>
@@ -18,43 +18,56 @@ export default {
 	props: {
 		data: Object,
 	},
-	data: function(){
+	data: function() {
 		let localData = this.data
-		return{
+		return {
 			productos: localData.products,
 		}
 	},
-	computed:{}
+	computed: {}
 }
 </script>
 
 <style scoped>
-section.banner-products{
+section.banner-products {
 	width: 100%;
 	/* background-color: bisque; */
 }
-.products-wraper{
+.products-wraper {
 	width: 100%;
-	height: 490px;
-	/* background-color:blueviolet; */
+	height: 500px;
 	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
-	align-items:center;
-	margin:5px 0;
-	 
+	align-items: center;
+	margin: 5px 0;
 }
-.products-content{
+section.banner-products>div:first-child {
+	margin: 0 0 5px 0;
+}
+section.banner-products>div:last-child {
+	margin: 5px 0 0 0;
+}
+.products-content {
 	width: 670px;
 	height: 300px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.50);
 }
-
+.content-logo{
+	width: auto;
+	height: 125px;
+}
+.banner-products>div:nth-child(2) img{
+	height: 150px;
+}
+.products-content a{
+	padding: 10px 50px;
+}
 
 </style>

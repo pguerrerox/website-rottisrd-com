@@ -1,5 +1,5 @@
 <template>
-	<section class="banner" :style="{'background-image': 'url(' + require('../assets/images/banner'+id+'.png')+')'}">
+	<section class="banner" :style="{'background-image': 'url(' + require('../assets/images/banners/banner'+id+'.png')+')'}">
 		<div class="banner-wraper">
 			<div class="banner-content">
 				<h1>{{h1}}</h1>
@@ -7,9 +7,9 @@
 				<g-link to="" class="button">{{button}}</g-link>
 	
 				<!-- Example of the hardcoded structure.
-							<h1>¿Quienes somos?</h1>
-							<p>La <strong>fábrica de quesos Rottis</strong> nace en el pueblo pequeño de Luperón, Puerto Plata; con la visión de producir quesos dominicanos de la más alta calidad para su exportación hacia los estados unidos.</p>
-							<a href="#" class="button">Descubre mas sobre nosotros</a> -->
+								<h1>¿Quienes somos?</h1>
+								<p>La <strong>fábrica de quesos Rottis</strong> nace en el pueblo pequeño de Luperón, Puerto Plata; con la visión de producir quesos dominicanos de la más alta calidad para su exportación hacia los estados unidos.</p>
+								<a href="#" class="button">Descubre mas sobre nosotros</a> -->
 	
 			</div>
 		</div>
@@ -18,8 +18,10 @@
 
 <script>
 // import content from "~/data/content.json";
+import Index from "~/pages/Index.vue";
 
 export default {
+	extends: Index,
 	props: {
 		id: Number,
 		data: Object,
@@ -34,9 +36,6 @@ export default {
 		}
 	},
 	computed: {},
-	mounted() {
-		this.pageIn = this.page;
-	}
 }
 </script>
 
@@ -51,12 +50,10 @@ section.banner {
 	justify-content: center;
 	align-items: center;
 }
-
 .banner-wraper {
-	width: 1470px;
+	width: 1440px;
 	height: fit-content;
 }
-
 .banner-content {
 	background-color: rgba(255, 255, 255, 0.50);
 	width: 630px;
@@ -67,14 +64,12 @@ section.banner {
 	justify-content: center;
 	align-items: center;
 }
-
 .banner-content p {
 	width: 75%;
 	font-size: 1.2em;
 	padding: 0 30px;
 	text-align: justify;
 }
-
 .banner-content p>>>strong {
 	color: #c00000;
 }

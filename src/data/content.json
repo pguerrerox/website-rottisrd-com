@@ -37,9 +37,10 @@
     },
     "productos": {
       "slideshow": [
-        "banner0.png",
-        "banner1.png",
-        "banner2.png"
+        "slide1.png",
+        "slide2.png",
+				"slide3.png",
+				"slide4.png"
       ],
       "signs": [
         {

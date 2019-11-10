@@ -2,7 +2,7 @@
 	<header class="header">
 		<div class="header-content">
 			<g-link to="/">
-				<g-image src="~/assets/images/logo.png" width="140px" alt="logo" background="#ffffff" quality="100" blur="50" />
+				<g-image src="~/assets/images/logo.png" width="175px" alt="logo" background="#ffffff" quality="100" blur="50" />
 			</g-link>
 			<nav class="nav">
 				<g-link class="nav-link" to="/">Inicio</g-link>
@@ -17,14 +17,15 @@
 
 <style scoped>
 .header {
-	width: 1470px;
-	height: 140px;
+	width: 100%;
+	height: 150px;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 .header-content {
-	width: 100%;
-	height: 100%;
+	width: 1440px;
+	/* height: 100%; */
 	display: flex;
 	align-items: center;
 	justify-content: center;

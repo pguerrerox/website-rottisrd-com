@@ -4,7 +4,7 @@
 			<div class="dots" :class="{active: slideshowPos === imgs.indexOf(img)}" v-for="img in imgs" :key="img.id" v-on:click="slideshowPos = imgs.indexOf(img)"></div>
 		</div>
 		<div class="images">
-			<g-image class="slides-imgs fade" v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)" :src="require('!!assets-loader!~/assets/images/'+img)" />
+			<g-image class="slides-imgs fade" v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)" :src="require('!!assets-loader!~/assets/images/slideshow/'+img)" />
 		</div>
 	</section>
 </template>
@@ -26,7 +26,7 @@ export default {
 	mounted: function() {
 		setInterval(() => {
 			this.counter()
-		}, 5000);
+		}, 3500);
 	},
 	methods: {
 		counter: function() {
@@ -44,11 +44,10 @@ export default {
 .slideshow {
 	width: 100vw;
 	height: 50vh;
-	max-height: 400px;
+	max-height: 500px;
 	overflow: hidden;
 	position: relative;
 }
-
 .circles {
 	display: flex;
 	flex-direction: column;
@@ -58,7 +57,6 @@ export default {
 	left: 95%;
 	z-index: 5;
 }
-
 .dots {
 	background-color: rgb(255, 255, 255);
 	width: 15px;
@@ -68,19 +66,16 @@ export default {
 	border-radius: 50%;
 	/* border: solid 1px #ccc; */
 }
-
 .active {
 	background-color: rgba(255, 255, 255, 0);
 	border: solid 1px #fff;
 }
-
 .images {
 	width: inherit;
 	height: 100%;
 }
-
 .slides-imgs {
-	width: fit-content;
+	width: 100%;
 	height: inherit;
 	position: absolute;
 	object-fit: cover;
@@ -88,14 +83,12 @@ export default {
 }
 
 /* Fading animation */
-
 .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: s;
 	animation-name: fade;
 	animation-duration: 0.5s;
 }
-
 @-webkit-keyframes fade {
 	from {
 		opacity: .6
@@ -104,7 +97,6 @@ export default {
 		opacity: 1
 	}
 }
-
 @keyframes fade {
 	from {
 		opacity: .6

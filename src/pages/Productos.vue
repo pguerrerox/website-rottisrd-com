@@ -24,6 +24,7 @@ export default {
 	},
 	data: function() {
 		return {
+			// keep an eye on these pointers, if JSON structure changes, these must change accordingly
 			data: content.es.productos, //productos data in the JSON file.
 		}
 	},

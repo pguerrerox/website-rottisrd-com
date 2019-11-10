@@ -6,8 +6,8 @@
 				<h3>{{h3}}</h3>
 	
 				<!-- Hardcoded example
-							<h1>La calidad es tradicion</h1>
-							<h3>Conoce toda la calidad de nuestros productos</h3> -->
+								<h1>La calidad es tradicion</h1>
+								<h3>Conoce toda la calidad de nuestros productos</h3> -->
 	
 			</div>
 			<div class="sign-logos">
@@ -44,37 +44,33 @@ export default {
 <style scoped>
 .sign {
 	width: 100%;
+	max-height:450px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 50px 0;
+	margin: 75px 0;
 }
-
 .sign-wraper {
-	width: 1470px;
+	width: 1440px;
 }
-
 .sign-message {
 	text-align: center;
-	margin-bottom: 30px
+	/* margin-bottom: 50px */
 }
-
 .sign-message h1 {
 	margin: 0;
 }
-
 .sign-message h3 {
 	color: #999999;
 	margin-top: 0;
 }
-
 .sign-logos {
 	width: 100%;
 	display: flex;
+	margin-top: 50px;
 	justify-content: space-around;
 	align-items: center
 }
-
 .sign-logos img {
 	height: fit-content;
 }
