@@ -51,7 +51,7 @@
 	align-items: center;
 }
 .footer-content {
-	width: 1470px;
+	width: 1440px;
 	min-height: fit-content;
 	padding: 25px 0;
 	display: flex;

@@ -48,7 +48,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 75px 0;
+	margin: 75px auto;
 }
 .sign-wraper {
 	width: 1440px;

@@ -51,7 +51,8 @@ section.banner {
 	align-items: center;
 }
 .banner-wraper {
-	width: 1440px;
+	width: 100%;
+	max-width: 1440px;
 	height: fit-content;
 }
 .banner-content {

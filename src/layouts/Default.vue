@@ -50,7 +50,7 @@ h3 {
 }
 
 /* buttons */
-a.button {
+a.button, .button{
 	background-color: #c00000;
 	color: #ffffff;
 	text-decoration: none;
@@ -58,7 +58,7 @@ a.button {
 	margin: 15px;
 }
 
-a.button:hover {
+a.button:hover, .button:hover {
 	background-color: #ffffff;
 	border-right: 2px solid #c00000;
 	border-left: 2px solid #c00000;
