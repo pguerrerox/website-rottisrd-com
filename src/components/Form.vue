@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .forma {
 	display: flex;
 	justify-content: center;

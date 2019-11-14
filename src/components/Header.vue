@@ -9,7 +9,7 @@
 				<g-link class="nav-link" to="/nosotros">Sobre Nosotros</g-link>
 				<g-link class="nav-link" to="/gente">Nuestra Gente</g-link>
 				<g-link class="nav-link" to="/productos">Nuestros Productos</g-link>
-				<g-link class="nav-link" to="/contacto/">Contactos</g-link>
+				<g-link class="nav-link" to="/contacto">Contactos</g-link>
 			</nav>
 		</div>
 	</header>

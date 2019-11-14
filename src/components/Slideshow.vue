@@ -4,7 +4,7 @@
 			<div class="dots" :class="{active: slideshowPos === imgs.indexOf(img)}" v-for="img in imgs" :key="img.id" v-on:click="slideshowPos = imgs.indexOf(img)"></div>
 		</div>
 		<div class="images">
-			<g-image class="slides-imgs fade" v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)" :src="require('!!assets-loader!~/assets/images/slideshow/'+img)" />
+			<g-image class="slides-imgs fade" v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)" :src="require('!!assets-loader!~/assets/images/slideshow/'+img+'.png')" />
 		</div>
 	</section>
 </template>
@@ -12,15 +12,12 @@
 <script>
 export default {
 	props: {
-		data: Object,
-		// imgs: Array,
+		slides: Array,
 	},
 	data: function() {
-		let imagesPath = this.data;
 		return {
-			slideshowPos: 0,
-			imgs: imagesPath.slideshow,
-			// timer: null,
+			slideshowPos: Math.floor(Math.random() * Math.floor(4)),
+			imgs: this.slides,
 		}
 	},
 	mounted: function() {

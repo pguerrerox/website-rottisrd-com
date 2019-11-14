@@ -5,25 +5,25 @@
 				<h1>{{h1}}</h1>
 				<h3>{{h3}}</h3>
 	
-				<!-- Hardcoded example
-								<h1>La calidad es tradicion</h1>
-								<h3>Conoce toda la calidad de nuestros productos</h3> -->
+				<!-- 
+					Hardcoded example
+					<h1>La calidad es tradicion</h1>
+					<h3>Conoce toda la calidad de nuestros productos</h3>
+				-->
 	
 			</div>
-			<div class="sign-logos">
+			<div class="sign-logos" :class="{noMargin: imgs.length <= 0}">
 				<!-- g-image is not generated, bug on gridsome... https://github.com/gridsome/gridsome/issues/292  -->
 				<!-- <g-image v-for="img in imgs" :key="img.id" :src= "require('../assets/images/logos/'+img)" :style="{'width': '150px', 'height':'auto'}" alt="Rottis Logo" background="#ffffff" blur="50" quality="100" /> -->
 	
 				<!-- workaround for the g-images using !!assets-loader!, no idea how the F this work -->
-				<g-image v-for="img in imgs" :key="img.id" :src="require('!!assets-loader?width=150!~/assets/images/logos/'+img)" width="150px" alt="Rottis Logo" background="#ffffff" blur="50" quality="100" />
+				<g-image v-for="img in imgs" :key="img.id" :src="require('!!assets-loader?width=150!~/assets/images/logos/'+img)" width="150px" alt="Rottis Logo" background="#ffffff" blur="50" quality="100"  />
 			</div>
 		</div>
 	</section>
 </template>
 
 <script>
-// import content from "~/data/content.json"
-
 export default {
 	props: {
 		id: Number,
@@ -35,23 +35,27 @@ export default {
 			idx: localData.id,
 			h1: localData.h1,
 			h3: localData.h3,
-			imgs: localData.imgs
+			imgs: localData.imgs,
 		}
 	}
 }
 </script>
 
 <style scoped>
+/* conditional styles */
+.noMargin{
+	margin: 0 !important;
+}
 .sign {
 	width: 100%;
 	max-height:450px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 75px auto;
 }
 .sign-wraper {
 	width: 1440px;
+	margin: 75px auto;
 }
 .sign-message {
 	text-align: center;

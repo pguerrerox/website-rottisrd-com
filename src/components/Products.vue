@@ -4,7 +4,7 @@
 		<div class="products-wraper" v-for="producto in productos" :key="producto.id" :style="{'background-image': 'url(' + require('../assets/images/productos/'+producto.bgimage+'bg.png')+')'}">
 			<div class="products-content">
 				<g-image class="content-logo" :src="require('!!assets-loader!~/assets/images/logos/'+producto.logo+'.png')" />
-				<g-link to="" class="button">{{producto.button}}</g-link>
+				<g-link :to="producto.path" class="button">{{producto.button}}</g-link>
 			</div>
 		</div>
 	</section>

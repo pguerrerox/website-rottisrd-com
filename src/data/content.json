@@ -54,22 +54,26 @@
         {
           "logo": "rottis-logo",
 					"button": "Linea Rottis",
-					"bgimage": "rottis"
+					"bgimage": "rottis",
+					"path": "/marcas/Rottis"
         },
         {
           "logo": "baruk-logo",
           "button": "Linea Baruk",
-					"bgimage": "baruk"
+					"bgimage": "baruk",
+					"path": "/"
         },
         {
           "logo": "nauj-logo",
           "button": "Linea Nauj",
-					"bgimage": "nauj"
+					"bgimage": "nauj",
+					"path": "/"
         },
         {
           "logo": "costero-logo",
           "button": "Linea Costero",
-					"bgimage": "costero"
+					"bgimage": "costero",
+					"path": "/"
         }
       ]
     }

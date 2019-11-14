@@ -1,0 +1,58 @@
+{
+  "mainLogo": "main-logo",
+  "socialMedia": [
+    "facebook",
+    "instagram"
+  ],
+  "slideshow": [
+    "slide1",
+    "slide2",
+    "slide3",
+    "slide4"
+  ],
+  "marcasLogos": {
+    "rottis": {
+      "file": "rottis-logo"
+    },
+    "baruk": {
+      "file": "baruk-logo"
+    },
+    "nauj": {
+      "file": "nauj-logo"
+    },
+    "costero": {
+      "file": "costero-logo"
+    }
+  },
+  "banners": {
+    "index": [
+      "banner1",
+      "banner2"
+    ],
+    "productos": [
+      "rottis-bg",
+      "baruk-bg",
+      "nauj-bg",
+      "costero-bg"
+    ],
+    "marcas": {
+      "rottis": [
+        "holandes-bg",
+        "gouda-bg"
+      ],
+      "baruk": [],
+      "nauj": [],
+      "costero": []
+    }
+  },
+  "productShots": {
+    "rottis": [
+      "shot-holandes",
+      "shot-gouda"
+    ],
+    "baruk": [],
+    "nauj": [],
+    "costero": [],
+    "": {}
+  }
+}

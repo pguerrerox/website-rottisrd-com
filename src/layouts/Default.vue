@@ -15,9 +15,6 @@ export default {
 		Header,
 		Footer
 	},
-	props:{
-		page: String
-	},
 }
 </script>
 
@@ -28,6 +25,7 @@ body {
 	padding: 0;
 	/* line-height: 1.5; */
 }
+
 .layout {
 	width: 100%;
 	margin: 0 auto;
@@ -35,6 +33,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
+
 h1 {
 	font-family: markinson;
 	font-size: 3.5em;
@@ -42,15 +41,24 @@ h1 {
 	margin: 0.25em 0;
 	color: #c00000;
 }
+
 h3 {
 	font-size: 1.5em;
-	/* color: #999999; */
+	color: #999999;
 	font-weight: normal;
 	margin: 5px 0;
 }
 
+h2 {
+	font-size: 1.17em;
+	color: #999999;
+	font-weight: normal;
+}
+
 /* buttons */
-a.button, .button{
+
+a.button,
+.button {
 	background-color: #c00000;
 	color: #ffffff;
 	text-decoration: none;
@@ -58,7 +66,8 @@ a.button, .button{
 	margin: 15px;
 }
 
-a.button:hover, .button:hover {
+a.button:hover,
+.button:hover {
 	background-color: #ffffff;
 	border-right: 2px solid #c00000;
 	border-left: 2px solid #c00000;
