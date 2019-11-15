@@ -1,48 +1,56 @@
 <template>
 	<section class="banner-products">
-		<!-- :style="{'background-image': 'url(' + require('../assets/images/banner'+id+'.png')+')'}" -->
-		<div class="products-wraper" v-for="producto in productos" :key="producto.id" :style="{'background-image': 'url(' + require('../assets/images/productos/'+producto.bgimage+'bg.png')+')'}">
+		<div class="products-wraper" v-for="img in backgrounds" :key="img.id">
+			<g-image :src="require('!!assets-loader!~/assets/images/banners/productos/'+img+'.png')" />
 			<div class="products-content">
-				<g-image class="content-logo" :src="require('!!assets-loader!~/assets/images/logos/'+producto.logo+'.png')" />
-				<g-link :to="producto.path" class="button">{{producto.button}}</g-link>
+				<g-image class="content-logo" :src="require('!!assets-loader!~/assets/images/logos/'+logos[marcas[backgrounds.indexOf(img)]].file+'.png')" />
+				<g-link :to="'/marcas/'+marcas[backgrounds.indexOf(img)]" class="button">{{data.products[backgrounds.indexOf(img)].button}}</g-link>
 			</div>
 		</div>
 	</section>
 </template>
 
 <script>
-import content from "~/data/content.json";
-
 export default {
-	// idea: usar el link o titulo de la pagina para fetchear info desde el documento de contenido.... usarlo como prop...
 	props: {
 		data: Object,
+		media: Object,
 	},
 	data: function() {
-		let localData = this.data
 		return {
-			productos: localData.products,
+			marcas: ["rottis", "baruk", "nauj", "costero"],
+			backgrounds: this.media.banners.productos,
+			logos: this.media.marcasLogos,
 		}
 	},
-	computed: {}
 }
 </script>
 
 <style scoped>
 section.banner-products {
 	width: 100%;
-	/* background-color: bisque; */
 }
 .products-wraper {
+	position: relative;
 	width: 100%;
 	height: 500px;
-	background-size: cover;
+	/* background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 5px 0;
+}
+.products-wraper>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 section.banner-products>div:first-child {
 	margin: 0 0 5px 0;
@@ -63,9 +71,11 @@ section.banner-products>div:last-child {
 	width: auto;
 	height: 125px;
 }
-.banner-products>div:nth-child(2) img{
+section.banner-products > div:nth-child(2) > div > img{
 	height: 150px;
 }
+/* .banner-products >div:nth-child(2) img{
+} */
 .products-content a{
 	padding: 10px 50px;
 }

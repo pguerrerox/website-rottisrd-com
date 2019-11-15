@@ -1,9 +1,5 @@
 {
   "mainLogo": "main-logo",
-  "socialMedia": [
-    "facebook",
-    "instagram"
-  ],
   "slideshow": [
     "slide1",
     "slide2",
@@ -40,8 +36,16 @@
         "holandes-bg",
         "gouda-bg"
       ],
-      "baruk": [],
-      "nauj": [],
+      "baruk": [
+				"mozzarella-bg",
+				"danes-bg"
+			],
+      "nauj": [
+				"blancofreir-bg",
+				"amarillofreir-bg",
+				"cheddar-bg",
+				"dehoja-bg"
+			],
       "costero": []
     }
   },
@@ -50,9 +54,16 @@
       "shot-holandes",
       "shot-gouda"
     ],
-    "baruk": [],
-    "nauj": [],
-    "costero": [],
-    "": {}
+    "baruk": [
+			"shot-mozzarella",
+			"shot-danes"
+		],
+    "nauj": [
+			"shot-blancofreir",
+			"shot-amarillofreir",
+			"shot-cheddar",
+			"shot-dehoja"
+		],
+    "costero": []
   }
 }

@@ -14,9 +14,9 @@ import indexData from "~/data/data-index.json";
 import media from "~/data/media.json"
 
 // components
-import Banner from "~/components/Banner.vue";
-import Sign from "~/components/Sign.vue";
 import Slideshow from "~/components/Slideshow.vue";
+import Sign from "~/components/Sign.vue";
+import Banner from "~/components/Banner.vue";
 
 export default {
 	components: {
@@ -26,9 +26,9 @@ export default {
 	},
 	data: function() {
 		return {
+			slides: media.slideshow,
 			data: indexData.es,
 			banners: media.banners.index,
-			slides: media.slideshow,
 		}
 	},
 	metaInfo: {

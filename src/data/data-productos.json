@@ -1,0 +1,26 @@
+{
+  "es": {
+    "signs": [
+      {
+        "id": 1,
+        "h1": "Un pedazo de mi tierra",
+        "h3": "Productos dominicanos de la más alta calidad",
+        "imgs": ""
+      }
+    ],
+    "products": [
+      {
+        "button": "Linea Rottis"
+      },
+      {
+        "button": "Linea Baruk"
+      },
+      {
+        "button": "Linea Nauj"
+      },
+      {
+        "button": "Linea Costero"
+      }
+    ]
+  }
+}

@@ -29,10 +29,10 @@
 				<h3>Redes Sociales</h3>
 				<div class="info">
 					<a href="#">
-						<g-image class="social-logo" src="~/assets/images/facebook.png" width="30" quality="100" alt="facebook logo" />
+						<g-image class="social-logo" src="~/assets/images/socialmedia/facebook.png" width="30" quality="100" alt="facebook logo" />
 					</a>
 					<a href="#">
-						<g-image class="social-logo" src="~/assets/images/instagram.png" width="30" quality="100" alt="instagram logo" />
+						<g-image class="social-logo" src="~/assets/images/socialmedia/instagram.png" width="30" quality="100" alt="instagram logo" />
 					</a>
 				</div>
 			</div>
@@ -49,6 +49,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.footer h3{
+	color: #ffffff;
 }
 .footer-content {
 	width: 1440px;

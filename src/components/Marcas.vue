@@ -1,8 +1,7 @@
 <template>
 	<section class="marcas">
-		<div class="marcas-wrapper" v-for="item in marcas" :key="item.id">
+		<div class="marcas-wrapper" v-for="item in data" :key="item.id">
 			<div class="marcas-top">
-				<!-- <h1>{{item.index}}</h1> -->
 				<h2 v-html="item.info"></h2>
 				<g-image :src="require('!!assets-loader!~/assets/images/productShots/'+productShot[marca][item.index]+'.png')" />
 			</div>
@@ -16,16 +15,14 @@
 <script>
 export default {
 	props: {
-		data: Object,
+		data: Array,
 		media: Object,
 		marca: String,
 	},
 	data: function() {
 		return {
-			marcas: this.data.es.marcaDetalles,
 			productShot: this.media.productShots,
 			banners: this.media.banners.marcas,
-
 		}
 	}
 }
@@ -39,9 +36,9 @@ export default {
 	justify-content: center;
 	align-items: center;
 }
-.marcas-wrapper:not(:last-child){
+.marcas-wrapper:not(:last-child) {
 	margin-bottom: 10px;
-} 
+}
 .marcas-wrapper {
 	width: 100%;
 	display: flex;
@@ -49,26 +46,26 @@ export default {
 	justify-content: center;
 	align-items: center;
 }
-.marcas-top{
-	width: 1440px;
+.marcas-top {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 }
-.marcas-top h2{
+
+.marcas-top h2 {
 	width: 700px;
 	text-align: justify;
 }
-.marcas-ilustracion{
+.marcas-ilustracion {
 	width: 100%;
 	height: 450px;
 	overflow: hidden;
-	object-position: center;
-	object-fit: cover;
 }
-.marcas-ilustracion img{
+.marcas-ilustracion img {
 	width: 100%;
+	height: 100%;
 	object-position: center;
 	object-fit: cover;
 }

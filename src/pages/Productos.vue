@@ -1,15 +1,16 @@
 <template>
 	<Layout>
-		<Slideshow :data="data" />
+		<Slideshow :slides="slides" />
 		<Sign :id="1" :data="data" />
-		<Products :data="data" />
+		<Products :data="data" :media="media" />
 	
 	</Layout>
 </template>
 
 <script>
 // data
-import content from "~/data/content.json"
+import productosData from "~/data/data-productos.json";
+import media from "~/data/media.json";
 
 // components
 import Slideshow from "~/components/Slideshow.vue";
@@ -24,8 +25,10 @@ export default {
 	},
 	data: function() {
 		return {
-			// keep an eye on these pointers, if JSON structure changes, these must change accordingly
-			data: content.es.productos, //productos data in the JSON file.
+			slides: media.slideshow,
+			data: productosData.es,
+			media: media
+
 		}
 	},
 	metaInfo: {
