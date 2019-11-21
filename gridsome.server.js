@@ -12,5 +12,21 @@ module.exports = function (api) {
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
+	})
+}
+
+const fs = require('fs')
+let redirects = [
+		from = "/a/b",
+		to = "/",
+		status = 200
+]
+module.exports = {
+  afterBuild ({ redirects }) {
+    for (const rule of redirects) {
+			// rule.from   - The dynamic path
+			// rule.to     - The HTML file path
+      // rule.status - 200 if rewrite rule
+    }
+  }
 }
