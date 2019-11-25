@@ -1,27 +1,10 @@
 <template>
 	<section class="banner-products">
 		<div v-for="img in backgrounds" :key="img.id" class="products-wraper">
-			<g-image
-				:src="
-					require('!!assets-loader!~/assets/images/banners/productos/' +
-						img +
-						'.png')
-				"
-			/>
+			<img :src="require('~/assets/images/banners/productos/' +	img + '.png')" />
 			<div class="products-content">
-				<g-image
-					:src="
-						require('!!assets-loader!~/assets/images/logos/' +
-							logos[marcas[backgrounds.indexOf(img)]].file +
-							'.png')
-					"
-					class="content-logo"
-				/>
-				<g-link
-					:to="'/marcas/' + marcas[backgrounds.indexOf(img)]"
-					class="button"
-					>{{ data.products[backgrounds.indexOf(img)].button }}</g-link
-				>
+				<img :src="require('~/assets/images/logos/' + logos[marcas[backgrounds.indexOf(img)]].file + '.png')"	class="content-logo" />
+				<a :href="'/marcas/' + marcas[backgrounds.indexOf(img)]" class="button">{{ data.products[backgrounds.indexOf(img)].button }}</a>
 			</div>
 		</div>
 	</section>
@@ -44,7 +27,7 @@ export default {
 </script>
 
 <style scoped>
-section.banner-products {
+.banner-products {
 	width: 100%;
 }
 .products-wraper {

@@ -1,25 +1,11 @@
 <template>
 	<section class="banner">
-		<!-- :style="{'background-image': 'url(' + require('../assets/images/banners/banner'+id+'.png')+')'}" -->
-		<g-image
-			:src="
-				require('!!assets-loader!~/assets/images/banners/index/' +
-					background[id - 1] +
-					'.png')
-			"
-		/>
+		<img :src="require('~/assets/images/banners/index/' +	background[id - 1] + '.png')"/>
 		<div class="banner-wraper">
 			<div class="banner-content">
 				<h1>{{ h1 }}</h1>
 				<p v-html="p"></p>
-				<g-link to="" class="button">{{ button }}</g-link>
-
-				<!--
-					Example of the hardcoded structure.
-					<h1>¿Quienes somos?</h1>
-					<p>La <strong>fábrica de quesos Rottis</strong> nace en el pueblo pequeño de Luperón, Puerto Plata; con la visión de producir quesos dominicanos de la más alta calidad para su exportación hacia los estados unidos.</p>
-					<a href="#" class="button">Descubre mas sobre nosotros</a>
-				-->
+				<a href="" class="button">{{ button }}</a>
 			</div>
 		</div>
 	</section>

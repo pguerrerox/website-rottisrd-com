@@ -1,24 +1,10 @@
 <template>
 	<section class="slideshow">
 		<div class="circles">
-			<div
-				:class="{ active: slideshowPos === imgs.indexOf(img) }"
-				v-for="img in imgs"
-				:key="img.id"
-				v-on:click="slideshowPos = imgs.indexOf(img)"
-				class="dots"
-			></div>
+			<div :class="{ active: slideshowPos === imgs.indexOf(img) }" v-for="img in imgs" :key="img.id" v-on:click="slideshowPos = imgs.indexOf(img)" class="dots"></div>
 		</div>
 		<div class="images">
-			<g-image
-				v-for="img in imgs"
-				:key="img.id"
-				v-show="slideshowPos === imgs.indexOf(img)"
-				:src="
-					require('!!assets-loader!~/assets/images/slideshow/' + img + '.png')
-				"
-				class="slides-imgs fade"
-			/>
+			<img v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)" :src="require('~/assets/images/slideshow/'+ img +'.png')" class="slides-imgs fade" />
 		</div>
 	</section>
 </template>
@@ -100,6 +86,7 @@ export default {
 	animation-name: fade;
 	animation-duration: 0.5s;
 }
+
 @-webkit-keyframes fade {
 	from {
 		opacity: 0.6;
@@ -108,6 +95,7 @@ export default {
 		opacity: 1;
 	}
 }
+
 @keyframes fade {
 	from {
 		opacity: 0.6;

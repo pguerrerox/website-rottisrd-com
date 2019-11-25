@@ -1,17 +1,16 @@
 <template>
 	<header class="header">
 		<div class="header-content">
-			<!-- <a href="/">
-						</a> -->
-			<img src="~assets/images/logo.png" />
-	
+			<nuxt-link to="/">
+				<img src="~assets/images/logo.png" />
+			</nuxt-link>
 			<nav class="nav">
-							<a class="nav-link" to="/">Inicio</a>
-							<a class="nav-link" to="/nosotros">Sobre Nosotros</a>
-							<a class="nav-link" to="/gente">Nuestra Gente</a>
-							<a class="nav-link" to="/productos">Nuestros Productos</a>
-							<a class="nav-link" to="/contacto">Contactos</a>
-						</nav>
+				<nuxt-link class="nav-link" to="/">Inicio</nuxt-link>
+				<nuxt-link class="nav-link" to="/nosotros">Sobre Nosotros</nuxt-link>
+				<nuxt-link class="nav-link" to="/gente">Nuestra Gente</nuxt-link>
+				<nuxt-link class="nav-link" to="/productos">Nuestros Productos</nuxt-link>
+				<nuxt-link class="nav-link" to="/contacto">Contactos</nuxt-link>
+			</nav>
 		</div>
 	</header>
 </template>
@@ -24,7 +23,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 .header-content {
 	width: 1440px;
 	/* height: 100%; */
@@ -32,11 +30,10 @@
 	align-items: center;
 	justify-content: center;
 }
-
-img {
+.header-content img {
+	width: 140px;
 	margin: 0 25px;
 }
-
 .nav-link {
 	margin-left: 75px;
 	font-size: 1.05em;
@@ -44,12 +41,10 @@ img {
 	text-transform: capitalize;
 	color: #999999;
 }
-
 .nav-link.active--exact {
 	color: #c00000;
 	font-weight: bold;
 }
-
 .nav-link:hover {
 	color: #c00000;
 }

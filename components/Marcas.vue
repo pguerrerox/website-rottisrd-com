@@ -3,22 +3,10 @@
 		<div v-for="item in data" :key="item.id" class="marcas-wrapper">
 			<div class="marcas-top">
 				<h2 v-html="item.info"></h2>
-				<g-image
-					:src="
-						require('!!assets-loader!~/assets/images/productShots/' +
-							productShot[marca][item.index] +
-							'.png')
-					"
-				/>
+				<img :src="require('~/assets/images/productShots/' + productShot[marca][item.index] +	'.png')"/>
 			</div>
 			<div class="marcas-ilustracion">
-				<g-image
-					:src="
-						require('!!assets-loader!~/assets/images/banners/marcas/' +
-							banners[marca][item.index] +
-							'.png')
-					"
-				/>
+				<img :src="require('~/assets/images/banners/marcas/' + banners[marca][item.index] +	'.png')"/>
 			</div>
 		</div>
 	</section>
@@ -60,6 +48,7 @@ export default {
 }
 .marcas-top {
 	width: 100%;
+	margin: 15px 0 0 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;

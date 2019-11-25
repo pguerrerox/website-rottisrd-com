@@ -1,22 +1,26 @@
-# com-rottisrd
+# Website development
 
-> My flawless Nuxt.js project
+Repository dedicated to the development of the website `https://www.rottisrd.com.do`. 
 
-## Build Setup
+### Technologies
 
-``` bash
-# install dependencies
-$ npm run install
+- HTML - CSS - JS, the usual suspects.
+- Vue
+- Nuxt.js  ~~Gridsome~~ 
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+Happy coding!
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+### Challenges <sub>nuxt.js</sub>
 
-# generate static project
-$ npm run generate
+
+
+```bash
+gridsome...
+- Fetching data from a json file
+- Using the gridsome tag <g-image> together with Vue directive <v-for>    
+- Problems generating pages or loading, not sure
+    1.  Found info related to this problem on the gridsome documentacion. Turns out that gridsome will not generate all the dynamically generated pages (which is very inteligent).
+    https://gridsome.org/docs/dynamic-routing/#generating-rewrite-rules
+        
+gave up on this.
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

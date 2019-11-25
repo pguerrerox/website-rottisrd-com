@@ -4,30 +4,9 @@
 			<div class="sign-message">
 				<h1>{{ h1 }}</h1>
 				<h3>{{ h3 }}</h3>
-
-				<!-- 
-					Hardcoded example
-					<h1>La calidad es tradicion</h1>
-					<h3>Conoce toda la calidad de nuestros productos</h3>
-				-->
 			</div>
 			<div :class="{ noMargin: imgs.length <= 0 }" class="sign-logos">
-				<!-- g-image is not generated, bug on gridsome... https://github.com/gridsome/gridsome/issues/292  -->
-				<!-- <g-image v-for="img in imgs" :key="img.id" :src= "require('../assets/images/logos/'+img)" :style="{'width': '150px', 'height':'auto'}" alt="Rottis Logo" background="#ffffff" blur="50" quality="100" /> -->
-
-				<!-- workaround for the g-images using !!assets-loader!, no idea how the F this work -->
-				<g-image
-					v-for="img in imgs"
-					:key="img.id"
-					:src="
-						require('!!assets-loader?width=150!~/assets/images/logos/' + img)
-					"
-					width="150px"
-					alt="Rottis Logo"
-					background="#ffffff"
-					blur="50"
-					quality="100"
-				/>
+				<img v-for="img in imgs" :key="img.id" :src="require('~/assets/images/logos/' + img)" alt="Rottis Logo" />
 			</div>
 		</div>
 	</section>
@@ -86,6 +65,7 @@ export default {
 	align-items: center;
 }
 .sign-logos img {
-	height: fit-content;
+	width: 150px;
+	height: auto;
 }
 </style>

@@ -37,22 +37,10 @@
 				<h3>Redes Sociales</h3>
 				<div class="info">
 					<a href="#">
-						<!-- <g-image
-							class="social-logo"
-							src="~/assets/images/socialmedia/facebook.png"
-							width="30"
-							quality="100"
-							alt="facebook logo"
-						/> -->
+						<img class="social-logo" src="~/assets/images/socialmedia/facebook.png" alt="facebook logo"/>
 					</a>
 					<a href="#">
-						<!-- <g-image
-							class="social-logo"
-							src="~/assets/images/socialmedia/instagram.png"
-							width="30"
-							quality="100"
-							alt="instagram logo"
-						/> -->
+						<img class="social-logo" src="~/assets/images/socialmedia/instagram.png" alt="instagram logo"/>
 					</a>
 				</div>
 			</div>
@@ -98,6 +86,7 @@
 	color: #1f1f1f;
 }
 .social-logo {
+	width: 50px;
 	padding: 0 5px;
 }
 </style>

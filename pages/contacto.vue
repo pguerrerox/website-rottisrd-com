@@ -1,9 +1,9 @@
 <template>
-	<Layout>
+	<section>
 		<Info />
 		<hr />
 		<Form />
-	</Layout>
+	</section>
 </template>
 
 <script>

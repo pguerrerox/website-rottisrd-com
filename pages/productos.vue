@@ -1,38 +1,36 @@
 <template>
-	<layout>
+	<section>
 		<Slideshow :slides="slides" />
 		<Sign :id="1" :data="data" />
-		<Banner :id="1" :data="data" :background="banners" />
-		<Sign :id="2" :data="data" />
-		<Banner :id="2" :data="data" :background="banners" />
-	</layout>
+		<Products :data="data" :media="media" />
+	</section>
 </template>
 
 <script>
 // data
-import indexData from '~/data/data-index.json'
+import productosData from '~/data/data-productos.json'
 import media from '~/data/media.json'
 
 // components
 import Slideshow from '~/components/Slideshow.vue'
 import Sign from '~/components/Sign.vue'
-import Banner from '~/components/Banner.vue'
+import Products from '~/components/Products.vue'
 
 export default {
 	components: {
-		Banner,
+		Slideshow,
 		Sign,
-		Slideshow
+		Products
 	},
 	data() {
 		return {
 			slides: media.slideshow,
-			data: indexData.es,
-			banners: media.banners.index
+			data: productosData.es,
+			media
 		}
 	},
 	metaInfo: {
-		title: 'Inicio!'
+		title: 'Nuestros Productos'
 	}
 }
 </script>

@@ -15,6 +15,14 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  generate: {
+    routes: [
+      '/marcas/rottis',
+      '/marcas/baruk',
+      '/marcas/nauj',
+      '/marcas/costero'
+    ]
+  },
   /*
   ** Customize the progress-bar color
   */
@@ -23,6 +31,7 @@ export default {
   ** Global CSS
   */
   css: [
+    
   ],
   /*
   ** Plugins to load before mounting the App

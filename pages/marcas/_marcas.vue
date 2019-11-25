@@ -1,14 +1,16 @@
 <template>
-	<layout>
+	<section>
 		<Slideshow :slides="slides" />
+		<!-- <h1>{{id}}</h1> -->
+		<!-- <h2>{{dataIntro}}</h2> -->
 		<Intro :data="dataIntro" :media="mediaIntro" :marca="marca" />
 		<Marcas :data="dataMarcas" :media="mediaMarcas" :marca="marca" />
-	</layout>
+	</section>
 </template>
 
 <script>
 // data
-import data from '~/data/marcas/rottis.json'
+import data from '~/data/data-marcas.json'
 import media from '~/data/media.json'
 
 // components
@@ -23,14 +25,19 @@ export default {
 		Marcas
 	},
 	data() {
+		const base = this.$route.params.marcas
 		return {
 			slides: media.slideshow,
-			marca: 'rottis',
-			dataIntro: data.es.marcaIntro,
+			dataIntro: data.es[base].marcaIntro,
+			dataMarcas: data.es[base].marcaDetalles,
 			mediaIntro: media.marcasLogos,
-			dataMarcas: data.es.marcaDetalles,
-			mediaMarcas: media
+			mediaMarcas: media,
+			marca: this.$route.params.marcas
 		}
+	},
+	mounted() {
+		// this.id = String(this.$route.params.marcas)
+		// this.dataIntro = data.es[this.$route.params.marcas].marcaIntro
 	}
 }
 </script>

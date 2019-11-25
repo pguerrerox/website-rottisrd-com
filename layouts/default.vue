@@ -1,55 +1,78 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+	<div class="layout">
+		<Header />
+		<nuxt />
+		<Footer />
+	</div>
 </template>
 
+<script>
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
+
+import "~/assets/css/normalize.css"
+
+export default {
+	components: {
+		Header,
+		Footer
+	}
+}
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+body {
+	font-family: 'gotham';
+	margin: 0;
+	padding: 0;
+	/* line-height: 1.5; */
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.layout {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+h1 {
+	font-family: markinson;
+	font-size: 3.5em;
+	font-weight: normal;
+	margin: 0.25em 0;
+	color: #c00000;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+h3 {
+	font-size: 1.5em;
+	color: #999999;
+	font-weight: normal;
+	margin: 5px 0;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+h2 {
+	font-size: 1.17em;
+	color: #999999;
+	font-weight: normal;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+/* buttons */
+
+a.button,
+.button {
+	background-color: #c00000;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 15px;
+	margin: 15px;
+}
+
+a.button:hover,
+.button:hover {
+	background-color: #ffffff;
+	border-right: 2px solid #c00000;
+	border-left: 2px solid #c00000;
+	color: #c00000;
 }
 </style>
