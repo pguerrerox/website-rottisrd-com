@@ -1,3 +1,8 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/'
+  }
+} : {};
 
 export default {
   mode: 'spa',
@@ -15,6 +20,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  ...routerBase,
   generate: {
     routes: [
       '/marcas/rottis',
