@@ -54,7 +54,6 @@ export default {
 	margin: 0;
 }
 .sign-message h3 {
-	color: #999999;
 	margin-top: 0;
 }
 .sign-logos {

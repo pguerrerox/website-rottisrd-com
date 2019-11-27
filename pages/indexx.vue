@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section class="main">
     <Slideshow :slides="slides" />
     <Sign :id="1" :data="data" />
     <Banner :id="1" :data="data" :background="banners" />

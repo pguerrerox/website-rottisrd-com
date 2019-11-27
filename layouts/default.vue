@@ -27,15 +27,16 @@ body {
 	padding: 0;
 	/* line-height: 1.5; */
 }
-
-.layout {
+/* .layout {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+} */
+.main{
+	width: 100%;
 }
-
 h1 {
 	font-family: markinson;
 	font-size: 3.5em;
@@ -43,18 +44,22 @@ h1 {
 	margin: 0.25em 0;
 	color: #c00000;
 }
-
 h3 {
 	font-size: 1.5em;
-	color: #999999;
+	color: #666;
 	font-weight: normal;
 	margin: 5px 0;
 }
-
 h2 {
 	font-size: 1.17em;
-	color: #999999;
+	color: #666;
 	font-weight: normal;
+}
+p {
+	font-size: 1.2em;
+	text-align: justify;
+	line-height: 1.5em;
+	color: #333;
 }
 
 /* buttons */

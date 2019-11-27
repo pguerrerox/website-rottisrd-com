@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .slideshow {
-	width: 100vw;
+	width: 100%;
 	height: 50vh;
 	max-height: 500px;
 	overflow: hidden;

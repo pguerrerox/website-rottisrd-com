@@ -39,7 +39,7 @@
 	font-size: 1.05em;
 	text-decoration: none;
 	text-transform: capitalize;
-	color: #999999;
+	color: #666666;
 }
 .nav-link.active--exact {
 	color: #c00000;
