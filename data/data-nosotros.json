@@ -1,0 +1,39 @@
+{
+  "es": {
+    "historia": {
+      "titulo": "Historia Empresarial",
+      "texto": [
+        {
+          "titulo": "Fabrica de Queso Rottis",
+          "content": "<strong>La Fábrica de Quesos Rottis, SRL.</strong>, es una pequeña empresa manufacturera, dedicada a la elaboración y comercialización de quesos y Yogurt tales como: Queso Amarillo de Freír, Queso Blanco de Freír, Queso de Hoja, Queso Tipo Holandés, Queso Edam Tipo Holandés, Tipo Gouda, Queso Mozzarella, Queso Danés y Yogurt Natural y Sabores Variados. <br><br><strong>La Fábrica de Quesos Rottis, SRL.</strong>, Nace el 20 diciembre del 2013 y se constituye de manera formal el 20 de enero 2014. ¿Por qué surge la idea?, Surge debido a las dificultades que estaban presentando las fábricas ubicadas en la zona Norte del País para elaborar productos lácteos aptos para exportación, es por esto que nace la idea de instalar una fábrica capaz de elaborar productos lácteos con los estándares de calidad e inocuidad establecidos para comercializar tanto a nivel nacional como internacional.<br><br> En la actualidad la <strong>Fábrica de Quesos Rottis</strong> cuenta con maquinarias y un equipo humano de profesionales y técnicos dispuestos a comprometerse mejoramiento continuo de cada proceso realizado en la misma, ayudando así que sus productos cumplan con los estándares de calidad establecidos."
+        }
+      ]
+    },
+    "filosofia": {
+      "titulo": "Filosofia Empresarial",
+      "texto": [
+        {
+          "titulo": "Mision",
+          "content": "Ofrecer a nuestros clientes productos Lácteos elaborados con los más altos estándares de calidad e inocuidad, sustentado en un sistema de gestión que promueva el desarrollo de nuestro personal y su participación en la mejora de productos."
+        },
+        {
+          "titulo": "Vision",
+          "content": "Ser reconocido nacional e internacionalmente en la fabricación de productos Lácteos de alta calidad, llenando las expectativas de nuestros clientes y aumentando de manera eficiente la participación del mercado a través de un equipo de trabajo profesional y competitivo."
+        },
+        {
+          "titulo": "Valores",
+          "content": "<ul><li>Calidad</li><li>Responsabilidad</li><li>Confianza</li><li>Seguridad</li><li>Innovación</li><li>Compromiso Social</li></ul>"
+        }
+      ]
+    },
+    "calidad": {
+      "titulo": "Calidad e Inocuidad",
+      "texto": [
+        {
+          "titulo": "",
+          "content": "Nos comprometemos a satisfacer las necesidades que requieren nuestros clientes al entregar productos inocuos; sustentados en la disciplina y logros de objetivos; garantizando las mejores prácticas del negocio; apegados al cumplimiento de las normas y leyes establecidas para el sector, y mejorando continuamente nuestro sistema de gestión de calidad e inocuidad."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "mainLogo": "main-logo",
+  "slideshow": [
+    "slide1",
+    "slide2",
+    "slide3",
+    "slide4"
+  ],
+  "fijas": {
+    "rottis": "fija1",
+    "baruk": "fija2",
+    "nauj": "fija3",
+    "costero": "fija4"
+  },
+  "marcasLogos": {
+    "rottis": {
+      "file": "rottis-logo"
+    },
+    "baruk": {
+      "file": "baruk-logo"
+    },
+    "nauj": {
+      "file": "nauj-logo"
+    },
+    "costero": {
+      "file": "costero-logo"
+    }
+  },
+  "banners": {
+    "index": [
+      "banner1",
+      "banner2"
+    ],
+    "productos": [
+      "rottis-bg",
+      "baruk-bg",
+      "nauj-bg",
+      "costero-bg"
+    ],
+    "marcas": {
+      "rottis": [
+        "holandes-bg",
+        "gouda-bg"
+      ],
+      "baruk": [
+				"mozzarella-bg",
+				"danes-bg"
+			],
+      "nauj": [
+				"blancofreir-bg",
+				"amarillofreir-bg",
+				"cheddar-bg",
+				"dehoja-bg"
+			],
+      "costero": [
+        "blancofreir-costero-bg",
+        "blancofreir-costero-bg",
+        "blancofreir-costero-bg",
+        "blancofreir-costero-bg"
+      ]
+    }
+  },
+  "productShots": {
+    "rottis": [
+      "shot-holandes",
+      "shot-gouda"
+    ],
+    "baruk": [
+			"shot-mozzarella",
+			"shot-danes"
+		],
+    "nauj": [
+			"shot-blancofreir",
+			"shot-amarillofreir",
+			"shot-cheddar",
+			"shot-dehoja"
+		],
+    "costero": [
+      "shot-holandes-costero",
+      "shot-amarillofreir-costero",
+      "shot-blancofreir-costero"
+    ]
+  }
+}

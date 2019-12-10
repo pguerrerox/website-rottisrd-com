@@ -1,15 +1,13 @@
-#folders
-.cache
-dist
-node_modules
-src/.temp
-.vscode
-trash
-
-
-#files
-.DS_Store
+##Files
 .env
 *.log
+npm-debug.log*
+.DS_Store
+.editorconfig
 
-
+##Folders
+logs
+node_modules/
+.cache
+.nuxt
+dist
