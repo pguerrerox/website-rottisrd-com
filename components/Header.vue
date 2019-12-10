@@ -31,7 +31,7 @@
 	justify-content: center;
 }
 .header-content img {
-	width: 140px;
+	width: 200px;
 	margin: 0 25px;
 }
 .nav-link {

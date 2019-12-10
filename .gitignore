@@ -3,6 +3,7 @@
 *.log
 npm-debug.log*
 .DS_Store
+.editorconfig
 
 ##Folders
 logs

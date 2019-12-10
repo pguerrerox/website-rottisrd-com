@@ -1,8 +1,6 @@
 <template>
 	<section>
-		<Slideshow :slides="slides" />
-		<!-- <h1>{{id}}</h1> -->
-		<!-- <h2>{{dataIntro}}</h2> -->
+		<Slideshow :fijas="fijas" :nonSlides="nonSlides" :marca="marca"/>
 		<Intro :data="dataIntro" :media="mediaIntro" :marca="marca" />
 		<Marcas :data="dataMarcas" :media="mediaMarcas" :marca="marca" />
 	</section>
@@ -27,17 +25,16 @@ export default {
 	data() {
 		const base = this.$route.params.marcas
 		return {
-			slides: media.slideshow,
+			fijas: media.fijas,
+			nonSlides: true,
 			dataIntro: data.es[base].marcaIntro,
 			dataMarcas: data.es[base].marcaDetalles,
 			mediaIntro: media.marcasLogos,
 			mediaMarcas: media,
-			marca: this.$route.params.marcas
+			marca: this.$route.params.marcas,
 		}
 	},
 	mounted() {
-		// this.id = String(this.$route.params.marcas)
-		// this.dataIntro = data.es[this.$route.params.marcas].marcaIntro
 	}
 }
 </script>

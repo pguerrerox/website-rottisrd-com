@@ -25,15 +25,7 @@ body {
 	font-family: 'gotham';
 	margin: 0;
 	padding: 0;
-	/* line-height: 1.5; */
 }
-/* .layout {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-} */
 .main{
 	width: 100%;
 }
@@ -44,26 +36,26 @@ h1 {
 	margin: 0.25em 0;
 	color: #c00000;
 }
-h3 {
+h2{
 	font-size: 1.5em;
+	font-weight: normal;
+	margin: 10px 0;
+	color: #666;
+}
+h3 {
+	font-size: 1.2em;
 	color: #666;
 	font-weight: normal;
 	margin: 5px 0;
 }
-h2 {
-	font-size: 1.17em;
-	color: #666;
-	font-weight: normal;
-}
 p {
-	font-size: 1.2em;
-	text-align: justify;
+	font-size: 1em;
 	line-height: 1.5em;
+	text-align: justify;
 	color: #333;
 }
 
 /* buttons */
-
 a.button,
 .button {
 	background-color: #c00000;
@@ -72,7 +64,6 @@ a.button,
 	padding: 10px 15px;
 	margin: 15px;
 }
-
 a.button:hover,
 .button:hover {
 	background-color: #ffffff;

@@ -1,8 +1,8 @@
 <template>
 	<section class="marcas">
 		<div v-for="item in data" :key="item.id" class="marcas-wrapper">
-			<div class="marcas-top">
-				<h2 v-html="item.info"></h2>
+			<div class="marcas-top" :class="{ reverse: item.index % 2 != 0}">
+				<p v-html="item.info"></p>
 				<img :src="require('~/assets/images/productShots/' + productShot[marca][item.index] +	'.png')"/>
 			</div>
 			<div class="marcas-ilustracion">
@@ -54,8 +54,10 @@ export default {
 	justify-content: space-evenly;
 	align-items: center;
 }
-
-.marcas-top h2 {
+.reverse{
+	flex-direction: row-reverse;
+}
+.marcas-top p {
 	width: 700px;
 	text-align: justify;
 }

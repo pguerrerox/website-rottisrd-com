@@ -69,7 +69,6 @@ export default {
 }
 .banner-content p {
 	width: 75%;
-	font-size: 1.2em;
 	padding: 0 30px;
 	text-align: justify;
 }

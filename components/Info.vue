@@ -1,7 +1,7 @@
 <template>
 	<section class="info">
-		<h1>Puedes contactarnos, usando cualquiera de estos medios.</h1>
-
+		<h1 class="normal">Gracias por su interes en <span><br>Fabrica de Quesos Rottis</span></h1>
+		<h2><strong>Puedes contactarnos</strong>, usando cualquiera de estos medios.</h2>
 		<div class="info-informacion">
 			<div class="info-contacto">
 				<p class=""><strong>Vía telefónica</strong> al siguiente número:</p>
@@ -14,14 +14,14 @@
 
 			<div class="info-contacto">
 				<p class="">En nuestras <strong>redes sociales</strong>:</p>
-				<h3><a href="" target="_blank">Facebook</a><br /></h3>
-				<h3><a href="" target="_blank">Instagram</a><br /></h3>
-				<h3><a href="" target="_blank">LinkedIn</a></h3>
+				<h3><a href="#" >Facebook</a><br /></h3>
+				<h3><a href="#" >Instagram</a><br /></h3>
+				<h3><a href="#" >LinkedIn</a></h3>
 			</div>
 
 			<div class="info-contacto">
 				<p class="">Nuestro <strong>horario laboral</strong> es:</p>
-				<h3>Lunes a Viernes <br />7:30 am / 5:00 pm</h3>
+				<h3>Lunes a Viernes <br />8:00 am / 5:00 pm</h3>
 				<br />
 				<h3>Sabados <br />8:00 am / 12:00 pm</h3>
 			</div>
@@ -37,10 +37,20 @@ export default {}
 .info {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 1440px;
 	margin: 75px auto;
 }
-.info h1 {
+.normal{
+	font-family: 'gotham';
+	color: #666;
+	margin:0 0 30px 0;
+
+}
+.normal span{
+	color: #c00000;
+	font-weight: bold;
+}
+.info p, h1{
 	text-align: center;
 }
 .info-informacion {
@@ -66,10 +76,6 @@ export default {}
 .info-contacto a:focus,
 .info-contacto h3:hover {
 	color: #c00000;
-	/* font-weight: bold; */
-}
-.info-contacto h3 {
-	font-size: 1.17em;
 }
 strong {
 	color: #c00000;

@@ -1,18 +1,18 @@
 <template>
   <Section class="texto">
-    <div class="texto-texto short" :class="{noMargin: texto}" v-show="texto">
+    <div class="texto-texto short" :class="{noMargin: texto}" v-if="texto">
       <h1>{{titulo}}</h1>
-      <p v-for="text in parrafo" :key="text.id">{{text.content}}</p>
+      <p v-for="text in parrafo" :key="text.id" v-html="text.content"></p>
     </div>
 
-    <div class="texto-filosofia short" :class="{noMargin: filosofia}">
-      <div v-show="filosofia" v-for="text in parrafo" :key="text.id">
+    <div class="texto-filosofia short" :class="{noMargin: filosofia}" v-if="filosofia">
+      <div v-for="text in parrafo" :key="text.id">
         <h1>{{text.titulo}}</h1>
         <p v-html="text.content"></p>
       </div>
     </div>
 
-    <div class="texto-ilustracion" v-show="imagen">
+    <div class="texto-ilustracion" v-if="imagen">
       <img :src="require('~/assets/images/banners/productos/' + imagenes[id] +	'.png')"/>
     </div>
   </Section>

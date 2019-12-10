@@ -6,6 +6,12 @@
     "slide3",
     "slide4"
   ],
+  "fijas": {
+    "rottis": "fija1",
+    "baruk": "fija2",
+    "nauj": "fija3",
+    "costero": "fija4"
+  },
   "marcasLogos": {
     "rottis": {
       "file": "rottis-logo"
@@ -46,7 +52,12 @@
 				"cheddar-bg",
 				"dehoja-bg"
 			],
-      "costero": []
+      "costero": [
+        "blancofreir-costero-bg",
+        "blancofreir-costero-bg",
+        "blancofreir-costero-bg",
+        "blancofreir-costero-bg"
+      ]
     }
   },
   "productShots": {
@@ -64,6 +75,10 @@
 			"shot-cheddar",
 			"shot-dehoja"
 		],
-    "costero": []
+    "costero": [
+      "shot-holandes-costero",
+      "shot-amarillofreir-costero",
+      "shot-blancofreir-costero"
+    ]
   }
 }

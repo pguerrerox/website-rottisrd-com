@@ -1,10 +1,13 @@
 <template>
 	<section class="slideshow">
-		<div class="circles">
+		<div class="circles" v-if="!nonSlides">
 			<div :class="{ active: slideshowPos === imgs.indexOf(img) }" v-for="img in imgs" :key="img.id" v-on:click="slideshowPos = imgs.indexOf(img)" class="dots"></div>
 		</div>
-		<div class="images">
+		<div class="images" v-if="!nonSlides">
 			<img v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)" :src="require('~/assets/images/slideshow/'+ img +'.png')" class="slides-imgs fade" />
+		</div>
+		<div class="images" v-if="nonSlides">
+			<img :src="require('~/assets/images/fijas/'+ fijas[marca] +'.png')" class="slides-imgs fade" />
 		</div>
 	</section>
 </template>
@@ -12,7 +15,10 @@
 <script>
 export default {
 	props: {
-		slides: Array
+		slides: Array,
+		marca: String,
+		fijas: Object,
+		nonSlides: Boolean
 	},
 	data() {
 		return {
@@ -27,10 +33,12 @@ export default {
 	},
 	methods: {
 		counter() {
-			if (this.slideshowPos >= this.imgs.length - 1) {
-				this.slideshowPos = 0
-			} else {
-				this.slideshowPos++
+			if(this.imgs){
+				if (this.slideshowPos >= this.imgs.length - 1) {
+					this.slideshowPos = 0
+				} else {
+					this.slideshowPos++
+				}
 			}
 		}
 	}

@@ -65,7 +65,7 @@ section.banner-products > div:last-child {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.75);
 }
 .content-logo {
 	width: auto;

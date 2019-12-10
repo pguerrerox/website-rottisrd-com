@@ -18,7 +18,7 @@
       {
         "id": 1,
         "h1": "La calidad es tradicion",
-        "h3": "Conoce toda la calidad de nuestros productos",
+        "h2": "Conoce toda la calidad de nuestros productos",
         "imgs": [
           "rottis-logo.png",
           "baruk-logo.png",
@@ -29,7 +29,7 @@
       {
         "id": 2,
         "h1": "Un pedazo de mi tierra",
-        "h3": "Productos dominicanos de la más alta calidad",
+        "h2": "Productos dominicanos de la más alta calidad",
         "imgs": ""
       }
     ]

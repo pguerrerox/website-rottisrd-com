@@ -6,7 +6,7 @@
         {
           "index": 0,
           "quesoTipo": "Holandés",
-          "info": "Nuestro queso Rottis tipo holandés, es el reflejo de la tradición gastronomica dominicana, el cual se consume habitualmente en el desayuno y en la cena, pero  igual manera se le puede disfrutar en meriendas y picaderas. Esta fabricado con leche pura de vaca, se caracteriza por tener un color amarillo anaranjado y suele tener agujeros en su interior. Es un queso semi duro y de una maduracion de unos 30 dias."
+          "info": "Nuestro queso <strong>Rottis tipo holandés</strong>, es el reflejo de la tradición gastronomica dominicana, el cual se consume habitualmente en el desayuno y en la cena, pero  igual manera se le puede disfrutar en meriendas y picaderas.<br>Esta fabricado con leche pura de vaca, se caracteriza por tener un color amarillo anaranjado y suele tener agujeros en su interior. Es un queso semi duro y de una maduracion de 30, 45 y 60 dias."
         },
         {
           "index": 1,
@@ -16,57 +16,62 @@
       ]
     },
     "baruk": {
-      "marcaIntro": "La linea Baruk esta compuesta por nuestros quesos Mozzarella y Danes. El mozzarella viene en una presentación en barra de 5 libras, ideal para ser utilizado en pizzas, lasañas ,etc. Nuestro queso Danes se puede disfrutar en sandwiches y cortado en cubos para degustar en picaderas, de igual manera tiene una presentación de 5 libras.",
+      "marcaIntro": "La linea <strong>Baruk</strong> esta compuesta por nuestros quesos Mozzarella y Danes. El mozzarella viene en una presentación en barra de 5 libras, ideal para ser utilizado en pizzas, lasañas ,etc.<br>Nuestro queso Danes se puede disfrutar en sandwiches y cortado en cubos para degustar en picaderas, de igual manera tiene una presentación de 5 libras.",
       "marcaDetalles": [
         {
           "index": 0,
           "quesoTipo": "Mozzarella",
-          "info": "El queso Mozzarella Baruk, se caracteriza por ser un queso fibroso y prácticamente descremado, ideal para platos donde se requiera un queso bajo en sal y a la vez con una textura suave."
+          "info": "El queso <strong>Mozzarella Baruk</strong>, se caracteriza por ser un queso fibroso y prácticamente descremado, ideal para platos donde se requiera un queso bajo en sal y a la vez con una textura suave."
         },
         {
           "index": 1,
           "quesoTipo": "Danes",
-          "info": "Nuestro Danes Baruk, es un queso maduro semi-suave de un color amarillento tenue y bajo en sal. Excelente para ser utilizado en la elaboración de empanadas o ser degustado en una picadera."
+          "info": "Nuestro <strong>Danes Baruk</strong>, es un queso maduro semi-suave de un color amarillento tenue y bajo en sal. Excelente para ser utilizado en la elaboración de empanadas o ser degustado en una picadera."
         }
       ]
     },
     "nauj": {
-      "marcaIntro": "Los quesos Nauj se caracterizan por ser nuestra linea con mayor calidad, la cual se produce con un nivel adecuado de sal, de 100% leche de vaca. Dentro de esta linea podemos encontrar los quesos para freír tanto el blanco como el amarillo, los cuales se pueden freír sin ningún tipo de aceite, ya que no se adhieren ni se derriten en la sartén. También dentro de esta linea pueden encontrar nuestro delicioso queso de hoja, el cual no contiene suero de leche y al igual que los quesos de freír esta empacado al vacío.",
+      "marcaIntro": "Los quesos <strong>Nauj</strong> se caracterizan por ser nuestra linea con mayor calidad, la cual se produce con un nivel adecuado de sal, de 100% leche de vaca. Dentro de esta linea podemos encontrar los quesos para freír tanto el blanco como el amarillo, los cuales se pueden freír sin ningún tipo de aceite, ya que no se adhieren ni se derriten en la sartén.<br> También dentro de esta linea pueden encontrar nuestro delicioso queso de hoja, el cual no contiene suero de leche y al igual que los quesos de freír esta empacado al vacío.",
       "marcaDetalles": [
         {
           "index": 0,
           "quesoTipo": "Blanco de Freír",
-          "info": "El queso Nauj Blanco de Freír, es un queso de textura grumosa con un color amarillo tenue, este se utiliza para ser acompañado con una guarnición de pure de plátanos (Mangu) o de papa, tradicionalmente consumido en el desayuno."
+          "info": "El queso <strong>Nauj Blanco de Freír</strong>, es un queso de textura grumosa con un color amarillo tenue, este se utiliza para ser acompañado con una guarnición de pure de plátanos (Mangu) o de papa, tradicionalmente consumido en el desayuno."
         },
         {
           "index": 1,
           "quesoTipo": "Amarillo de Freír",
-          "info": "El queso Nauj Amarillo de freír, un queso de color amarillo anaranjado de consistencia firme y compacta, bajo en sal. Ideal para freír o ser rebanado."
+          "info": "El queso <strong>Nauj Amarillo de freír</strong>, un queso de color amarillo anaranjado de consistencia firme y compacta, bajo en sal. Ideal para freír o ser rebanado."
         },
         {
           "index": 2,
           "quesoTipo": "Cheddar",
-          "info": "El queso Nauj tipo Cheddar, semi-maduro de sabor suave a fuerte. Con una textura suave y firme el cual se derrite. Este es un queso bajo en sal. Utilizado de manera ideal en platos como emparedados y hamburguesas."
+          "info": "El queso <strong>Nauj tipo Cheddar</strong>, semi-maduro de sabor suave a fuerte. Con una textura suave y firme el cual se derrite. Este es un queso bajo en sal. Utilizado de manera ideal en platos como emparedados y hamburguesas."
         },
         {
           "index": 3,
           "quesoTipo": "De Hoja",
-          "info": "El queso de Hoja Nauj, caracterizado por ser un queso fresco, cremoso y fibroso. COn una corteza semi dura y el interior cremoso. Excelente para personas que buscan un queso bajo en calorias y sal."
+          "info": "El queso de <strong>Hoja Nauj</strong>, caracterizado por ser un queso fresco, cremoso y fibroso. Con una corteza semi dura y el interior cremoso. Excelente para personas que buscan un queso bajo en calorias y sal."
         }
       ]
     },
     "costero": {
-      "marcaIntro": "",
+      "marcaIntro": "Nuestra línea de <strong>quesos Costero</strong> está compuesta por los deliciosos quesos de freír Blanco y amarillo, con excelente sabor y textura. Los cuales suelen ser disfrutados por los dominicanos en desayunos y cenas. Dentro de esta línea también se encuentra el queso Costero tipo holandés que se caracteriza por su sabor intenso y a la vez de un aroma suave.",
       "marcaDetalles": [
         {
           "index": 0,
-          "quesoTipo": "",
-          "info": ""
+          "quesoTipo": "Holandés",
+          "info": "MISSING"
         },
         {
           "index": 1,
-          "quesoTipo": "",
-          "info": ""
+          "quesoTipo": "Amarillo de Freír",
+          "info": "MISSING"
+        },
+        {
+          "index": 2,
+          "quesoTipo": "Blanco de Freír",
+          "info": "MISSING"
         }
       ]
     }

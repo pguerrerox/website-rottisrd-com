@@ -3,7 +3,7 @@
 		<div class="sign-wraper">
 			<div class="sign-message">
 				<h1>{{ h1 }}</h1>
-				<h3>{{ h3 }}</h3>
+				<h2>{{ h2 }}</h2>
 			</div>
 			<div :class="{ noMargin: imgs.length <= 0 }" class="sign-logos">
 				<img v-for="img in imgs" :key="img.id" :src="require('~/assets/images/logos/' + img)" alt="Rottis Logo" />
@@ -23,7 +23,7 @@ export default {
 		return {
 			idx: localData.id,
 			h1: localData.h1,
-			h3: localData.h3,
+			h2: localData.h2,
 			imgs: localData.imgs
 		}
 	}
@@ -53,7 +53,7 @@ export default {
 .sign-message h1 {
 	margin: 0;
 }
-.sign-message h3 {
+.sign-message h2 {
 	margin-top: 0;
 }
 .sign-logos {
@@ -64,7 +64,7 @@ export default {
 	align-items: center;
 }
 .sign-logos img {
-	width: 150px;
+	width: 200px;
 	height: auto;
 }
 </style>
