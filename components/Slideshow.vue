@@ -48,10 +48,10 @@ export default {
 <style scoped>
 .slideshow {
 	width: 100%;
-	height: 50vh;
-	max-height: 500px;
 	overflow: hidden;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 .circles {
 	display: flex;
@@ -75,16 +75,9 @@ export default {
 	background-color: rgba(255, 255, 255, 0);
 	border: solid 1px #fff;
 }
-.images {
-	width: inherit;
-	height: 100%;
-}
 .slides-imgs {
 	width: 100%;
-	height: inherit;
-	position: absolute;
-	object-fit: cover;
-	object-position: center;
+	display: block;
 }
 
 /* Fading animation */
@@ -94,7 +87,6 @@ export default {
 	animation-name: fade;
 	animation-duration: 0.5s;
 }
-
 @-webkit-keyframes fade {
 	from {
 		opacity: 0.6;
@@ -103,7 +95,6 @@ export default {
 		opacity: 1;
 	}
 }
-
 @keyframes fade {
 	from {
 		opacity: 0.6;

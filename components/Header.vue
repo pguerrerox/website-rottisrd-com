@@ -1,5 +1,16 @@
 <template>
 	<header class="header">
+				<div class="footer-secundary">
+			<!-- copyright -->
+			<!-- <div class="secundary-copyright">
+				<p>Copyright © 2020 - Fabrica de Quesos Rottis. Todos los derechos reservados</p>
+			</div>
+			<div class="secundary-developer">
+				<p class="duramente">Developed by <a href="#" target="_blank">Duramente Web Studio</a>
+				</p>
+			</div> -->
+		</div>
+
 		<div class="header-content">
 			<nuxt-link to="/">
 				<img src="~assets/images/logo.png" />
@@ -18,15 +29,16 @@
 <style scoped>
 .header {
 	width: 100%;
-	height: 150px;
+	/* height: 150px; */
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .header-content {
 	width: 1440px;
-	/* height: 100%; */
 	display: flex;
+	margin: 10px;
 	align-items: center;
 	justify-content: center;
 }
@@ -47,5 +59,16 @@
 }
 .nav-link:hover {
 	color: #c00000;
+}
+.footer-secundary{
+	width: 100%;
+	height: 35px;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* position: absolute; */
+	/* bottom: 0; */
 }
 </style>
