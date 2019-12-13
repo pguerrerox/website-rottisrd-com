@@ -47,17 +47,17 @@ export default {
 
 <style scoped>
 .slideshow {
-	width: 100%;
+	max-width: 100%;
 	overflow: hidden;
 	position: relative;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 .circles {
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 100%;
 	position: absolute;
 	left: 95%;
 	z-index: 5;

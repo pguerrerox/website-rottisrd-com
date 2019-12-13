@@ -39,10 +39,9 @@ export default {
 
 <style scoped>
 hr {
-    max-width: 1440px;
     width: 100%;
     border: 1px solid #cc3333;
     margin: 20px auto 20px auto;
-    padding: 0 10px;
+    
 }
 </style>

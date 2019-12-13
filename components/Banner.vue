@@ -53,14 +53,15 @@ export default {
 	object-fit: cover;
 }
 .banner-wraper {
-	width: 100%;
-	max-width: 1440px;
-	height: fit-content;
+	position: absolute;
+	left: 7.5%;
+	/* width: 85%; */
+	/* height: fit-content; */
 }
 .banner-content {
 	background-color: rgba(255, 255, 255, 0.85);
-	width: 630px;
-	height: 400px;
+	width: 600px;
+	height: 350px;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;

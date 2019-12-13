@@ -56,8 +56,8 @@ export default {}
 }
 .forma-container{
   width: 100%;
-	max-width: 1440px;
-	margin: 0 20px;
+	/* max-width: 1440px; */
+	/* margin: 0 20px; */
 }
 .forma-text{
   align-self: center;

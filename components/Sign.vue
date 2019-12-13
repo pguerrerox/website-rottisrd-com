@@ -31,10 +31,6 @@ export default {
 </script>
 
 <style scoped>
-/* conditional styles */
-.noMargin {
-	margin: 0 !important;
-}
 .sign {
 	width: 100%;
 	max-height: 450px;
@@ -43,7 +39,7 @@ export default {
 	align-items: center;
 }
 .sign-wraper {
-	width: 1440px;
+	width: 100%;
 	margin: 75px auto;
 }
 .sign-message {
@@ -60,11 +56,17 @@ export default {
 	width: 100%;
 	display: flex;
 	margin-top: 50px;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 }
 .sign-logos img {
 	width: 200px;
 	height: auto;
+	align-self: baseline;
+}
+
+/* conditional styles */
+.noMargin {
+	margin: 0 !important;
 }
 </style>

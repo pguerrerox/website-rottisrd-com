@@ -30,15 +30,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
 
 <style scoped>
 .info {
 	display: flex;
 	flex-direction: column;
-	width: 1440px;
-	margin: 75px auto;
+	width: 100%;
+	margin: 50px auto;
 }
 .normal{
 	font-family: 'gotham';
@@ -56,7 +58,7 @@ export default {}
 .info-informacion {
 	display: flex;
 	flex-flow: row;
-	justify-content: center;
+	justify-content: space-around;
 	margin: 25px 0 0 0;
 	width: 100%;
 }

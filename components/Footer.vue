@@ -36,8 +36,7 @@
 						</a>
 				</div>
 			</div>
-		</div>
-	
+		</div>	
 		<div class="footer-secundary">
 			<!-- copyright -->
 			<div class="secundary-copyright">
@@ -51,10 +50,16 @@
 	</footer>
 </template>
 
+<script>
+export default {
+	
+}
+</script>
+
 <style scoped>
 .footer {
 	width: 100%;
-	min-height: 300px;
+	min-height: 275px;
 	background-color: #333333;
 	display: flex;
 	flex-direction: column;
@@ -64,9 +69,10 @@
 }
 .footer h3 {
 	color: #ffffff;
+	font-size: 0.9em;	
 }
 .footer-content {
-	width: 1440px;
+	width: 100%;
 	min-height: fit-content;
 	padding: 25px 0;
 	display: flex;
@@ -75,7 +81,7 @@
 	align-items: stretch;
 }
 .quater {
-	width: 260px;
+	width: 250px;
 }
 .quater h3,
 .info {
@@ -87,10 +93,10 @@
 	font-size: 1.05em;
 }
 .quater .info a:hover {
-	color: #1f1f1f;
+	color: #d1d1d1;
 }
 .social-logo {
-	width: 45px;
+	width: 30px;
 	padding: 0 5px;
 }
 .footer-secundary{

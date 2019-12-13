@@ -48,25 +48,32 @@ export default {
 }
 .marcas-top {
 	width: 100%;
-	margin: 15px 0 0 0;
+	margin: 25px 0 0 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
 .reverse{
 	flex-direction: row-reverse;
 }
 .marcas-top p {
-	width: 700px;
+	min-width: 400px;
+	/* width: 700px; */
+	max-width: 550px;
 	text-align: justify;
+}
+.marcas-top img{
+	/* width: 425px; */
+	height: 350px;
 }
 .marcas-ilustracion {
 	width: 100%;
-	height: 450px;
+	/* height: 450px; */
 	overflow: hidden;
 }
 .marcas-ilustracion img {
+	display: block;
 	width: 100%;
 	height: 100%;
 	object-position: center;

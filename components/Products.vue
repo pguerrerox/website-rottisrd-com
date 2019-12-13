@@ -33,7 +33,7 @@ export default {
 .products-wraper {
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 450px;
 	/* background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat; */
@@ -59,8 +59,8 @@ section.banner-products > div:last-child {
 	margin: 5px 0 0 0;
 }
 .products-content {
-	width: 670px;
-	height: 300px;
+	width: 600px;
+	height: 275px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;

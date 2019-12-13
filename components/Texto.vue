@@ -46,7 +46,7 @@ export default {
   align-items: center;
 }
 .short{
-  width: 1440px;
+  width: 100%;
 }
 /* conditional classes */
 .noMargin {

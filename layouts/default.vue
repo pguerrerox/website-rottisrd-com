@@ -21,13 +21,12 @@ export default {
 </script>
 
 <style>
-body {
+html, body {
 	font-family: 'gotham';
-	margin: 0;
-	padding: 0;
 }
-.main{
-	width: 100%;
+.layout{
+	max-width: 1250px;
+	margin: 0 auto;
 }
 h1 {
 	font-family: markinson;

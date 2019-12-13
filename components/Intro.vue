@@ -32,22 +32,22 @@ export default {
 	min-height: 300px;
 	display: flex;
 	justify-content: center;
-	box-shadow: 0px 2px 5px 0px black;
+	/* box-shadow: 0px 0px 5px 0px rgb(156, 156, 156); */
+	border-bottom: 2px solid #ddd;
 	z-index: 2;
 }
 .intro-wrapper {
-	max-width: 1440px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
 }
-.intro-logo,
-intro-text {
-	margin: 10px 100px;
+.intro-logo, .intro-text {
+	margin: 10px 50px;
 }
 .intro-logo img {
-	width: 275px;
+	width: 250px;
 }
 .intro-text {
 	max-width: 700px;
