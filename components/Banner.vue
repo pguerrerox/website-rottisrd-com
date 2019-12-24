@@ -1,11 +1,11 @@
 <template>
 	<section class="banner">
-		<img :src="require('~/assets/images/banners/index/' +	background[id - 1] + '.png')"/>
+		<img :src="require('~/assets/images/banners/index/' +	background[id - 1] + '.webp')"/>
 		<div class="banner-wraper">
 			<div class="banner-content">
 				<h1>{{ h1 }}</h1>
 				<p v-html="p"></p>
-				<a href="" class="button">{{ button }}</a>
+				<a :href="aLink" class="button">{{ button }}</a>
 			</div>
 		</div>
 	</section>
@@ -24,7 +24,8 @@ export default {
 			idx: localData.id,
 			h1: localData.h1,
 			p: localData.p,
-			button: localData.button
+			button: localData.button,
+			aLink: localData.a
 		}
 	}
 }

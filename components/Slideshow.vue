@@ -1,8 +1,8 @@
 <template>
 	<section class="slideshow">
-		<div class="circles" v-if="!nonSlides">
+		<!-- <div class="circles" v-if="!nonSlides">
 			<div :class="{ active: slideshowPos === imgs.indexOf(img) }" v-for="img in imgs" :key="img.id" v-on:click="slideshowPos = imgs.indexOf(img)" class="dots"></div>
-		</div>
+		</div> -->
 		<div class="images" v-if="!nonSlides">
 			<img v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)" :src="require('~/assets/images/slideshow/'+ img +'.png')" class="slides-imgs fade" />
 		</div>
@@ -22,14 +22,15 @@ export default {
 	},
 	data() {
 		return {
-			slideshowPos: Math.floor(Math.random() * Math.floor(4)),
+			// slideshowPos: Math.floor(Math.random() * Math.floor(4)),
+			slideshowPos: 0,
 			imgs: this.slides
 		}
 	},
 	mounted() {
-		setInterval(() => {
-			this.counter()
-		}, 3500)
+		// setInterval(() => {
+		// 	this.counter()
+		// }, 3500)
 	},
 	methods: {
 		counter() {
@@ -47,11 +48,20 @@ export default {
 
 <style scoped>
 .slideshow {
-	max-width: 100%;
-	overflow: hidden;
-	position: relative;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
+	overflow: hidden;
+}
+.images{
+	width: 100%;
+	height: 500px;
+}
+.slides-imgs {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .circles {
 	height: 100%;
@@ -74,10 +84,6 @@ export default {
 .active {
 	background-color: rgba(255, 255, 255, 0);
 	border: solid 1px #fff;
-}
-.slides-imgs {
-	width: 100%;
-	display: block;
 }
 
 /* Fading animation */

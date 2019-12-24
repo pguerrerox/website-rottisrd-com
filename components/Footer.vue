@@ -59,13 +59,11 @@ export default {
 <style scoped>
 .footer {
 	width: 100%;
-	min-height: 275px;
 	background-color: #333333;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 .footer h3 {
 	color: #ffffff;
@@ -74,15 +72,20 @@ export default {
 .footer-content {
 	width: 100%;
 	min-height: fit-content;
-	padding: 25px 0;
+	padding: 75px 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	align-items: stretch;
 }
 .quater {
-	width: 250px;
+	width: 50%;
+	padding: 0 50px;
+	border-right: 2px solid #000;
 }
+.footer-content .quater:last-child{
+	border-right: none;
+} 
 .quater h3,
 .info {
 	text-align: center;
@@ -106,8 +109,6 @@ export default {
   flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	bottom: 0;
 }
 .secundary-copyright p{
   padding: 5px 15px;
