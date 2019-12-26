@@ -1,6 +1,6 @@
 <template>
 	<section class="main">
-    <Slideshow :slides="slides" />
+    <Slideshow :slides="slides" :slideshowPos="slideshowPos" />
     <Sign :id="1" :data="data" />
     <Banner :id="1" :data="data" :background="banners" />
     <Sign :id="2" :data="data" />
@@ -28,7 +28,8 @@ export default {
 		return {
 			slides: media.slideshow,
 			data: indexData.es,
-			banners: media.banners.index
+      banners: media.banners.index,
+      slideshowPos: 0,
 		}
 	}
 }

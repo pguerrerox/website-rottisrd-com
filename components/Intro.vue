@@ -2,7 +2,7 @@
 	<section class="intro">
 		<div class="intro-wrapper">
 			<div class="intro-logo">
-				<img :src="require('~/assets/images/logos/' + logo + '.png')"	/>
+				<img :src="require('~/assets/images/logos/' + logo + '.webp')"	/>
 			</div>
 			<div class="intro-text">
 				<h3 v-html="data"></h3>
@@ -33,7 +33,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	/* box-shadow: 0px 0px 5px 0px rgb(156, 156, 156); */
-	border-bottom: 2px solid #ddd;
+	border-bottom: 2px solid #c00;
 	z-index: 2;
 }
 .intro-wrapper {

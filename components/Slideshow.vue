@@ -18,12 +18,13 @@ export default {
 		slides: Array,
 		marca: String,
 		fijas: Object,
-		nonSlides: Boolean
+		nonSlides: Boolean,
+		slideshowPos: Number
 	},
 	data() {
 		return {
 			// slideshowPos: Math.floor(Math.random() * Math.floor(4)),
-			slideshowPos: 0,
+			// slideshowPos: 0,
 			imgs: this.slides
 		}
 	},
@@ -33,15 +34,15 @@ export default {
 		// }, 3500)
 	},
 	methods: {
-		counter() {
-			if(this.imgs){
-				if (this.slideshowPos >= this.imgs.length - 1) {
-					this.slideshowPos = 0
-				} else {
-					this.slideshowPos++
-				}
-			}
-		}
+		// counter() {
+		// 	if(this.imgs){
+		// 		if (this.slideshowPos >= this.imgs.length - 1) {
+		// 			this.slideshowPos = 0
+		// 		} else {
+		// 			this.slideshowPos++
+		// 		}
+		// 	}
+		// }
 	}
 }
 </script>

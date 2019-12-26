@@ -6,7 +6,7 @@
 				<h2>{{ h2 }}</h2>
 			</div>
 			<div :class="{ noMargin: imgs.length <= 0 }" class="sign-logos">
-				<img v-for="img in imgs" :key="img.id" :src="require('~/assets/images/logos/' + img)" alt="Rottis Logo" />
+				<img v-for="img in imgs" :key="img.id" :src="require('~/assets/images/logos/' + img +'.webp')" alt="Rottis Logo" />
 			</div>
 		</div>
 	</section>

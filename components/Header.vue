@@ -5,13 +5,14 @@
 
 		<div class="header-content">
 			<nuxt-link to="/">
-				<img src="~assets/images/logo.png" />
+				<img :src="require('~/assets/images/'+logo+'.webp')" />
 			</nuxt-link>
 			<nav class="nav">
 				<nuxt-link class="nav-link" to="/">Inicio</nuxt-link>
 				<nuxt-link class="nav-link" to="/nosotros">Sobre Nosotros</nuxt-link>
-				<nuxt-link class="nav-link" to="/gente">Nuestra Gente</nuxt-link>
+				<nuxt-link class="nav-link" to="/equipo">Nuestro Equipo</nuxt-link>
 				<nuxt-link class="nav-link" to="/productos">Nuestros Productos</nuxt-link>
+				<nuxt-link class="nav-link" to="/novedades">Novedades</nuxt-link>
 				<nuxt-link class="nav-link" to="/contacto">Contactos</nuxt-link>
 			</nav>
 		</div>
@@ -20,7 +21,9 @@
 
 <script>
 export default {
-	
+	props:{
+		logo: String
+	}
 }
 </script>
 
@@ -41,11 +44,11 @@ export default {
 }
 .header-content img {
 	width: 200px;
-	margin: 0 25px;
+	margin: 0 15px;
 }
 .nav-link {
-	padding: 10px 25px;
-	font-size: 1.05em;
+	padding: 15px 15px;
+	font-size: 1.0em;
 	text-decoration: none;
 	text-transform: capitalize;
 	color: #666666;

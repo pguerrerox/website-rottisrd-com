@@ -1,9 +1,9 @@
 <template>
 	<section class="banner-products">
 		<div v-for="img in backgrounds" :key="img.id" class="products-wraper">
-			<img :src="require('~/assets/images/banners/productos/' +	img + '.png')" />
+			<img :src="require('~/assets/images/banners/productos/' +	img + '.webp')" />
 			<div class="products-content">
-				<img :src="require('~/assets/images/logos/' + logos[marcas[backgrounds.indexOf(img)]].file + '.png')"	class="content-logo" />
+				<img :src="require('~/assets/images/logos/' + logos[marcas[backgrounds.indexOf(img)]].file + '.webp')"	class="content-logo" />
 				<a :href="'/marcas/' + marcas[backgrounds.indexOf(img)]" class="button">{{ data.products[backgrounds.indexOf(img)].button }}</a>
 			</div>
 		</div>

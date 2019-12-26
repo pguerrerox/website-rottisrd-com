@@ -22,10 +22,10 @@
         "h1": "La calidad es tradicion",
         "h2": "Conoce toda la calidad de nuestros productos",
         "imgs": [
-          "rottis-logo.png",
-          "baruk-logo.png",
-          "nauj-logo.png",
-          "costero-logo.png"
+          "rottis-logo",
+          "baruk-logo",
+          "nauj-logo",
+          "costero-logo"
         ]
       },
       {

@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <Slideshow :slides="slides" />
+    <!-- <Slideshow :slides="slides" :slideshowPos="slideshowPos" /> -->
     <Texto :state="historia"/>
     <Texto :state="filosofia"/>
     <Texto :state="calidad"/>
@@ -24,17 +24,18 @@ export default {
   data(){
     return{
       slides: media.slideshow,
+      slideshowPos: 1,
       historia:{
         content: content.es.historia,
-        imagenes: media.banners.productos,
-        id: 2,
+        imagenes: media.banners.nosotros,
+        id: 0,
         texto: true,
         imagen: true,
         filosofia: false
       },
       filosofia:{
         content: content.es.filosofia,
-        imagenes: media.banners.productos,
+        imagenes: media.banners.nosotros,
         id: 1,
         texto: false,
         imagen: true,
@@ -42,10 +43,10 @@ export default {
       },
       calidad:{
         content: content.es.calidad,
-        imagenes: media.banners.productos,
-        id: 1,
+        imagenes: media.banners.nosotros,
+        id: 2,
         texto: true,
-        imagen: false,
+        imagen: true,
         filosofia: false
       },
     }

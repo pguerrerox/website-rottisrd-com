@@ -1,5 +1,5 @@
 {
-  "mainLogo": "main-logo",
+  "mainLogo": "logo",
   "slideshow": [
     "slide1",
     "slide2",
@@ -31,6 +31,11 @@
       "banner1",
       "banner2"
     ],
+    "nosotros": [
+      "historia",
+      "filosofia",
+      "calidad"
+    ],
     "productos": [
       "rottis-bg",
       "baruk-bg",
@@ -40,7 +45,8 @@
     "marcas": {
       "rottis": [
         "holandes-bg",
-        "gouda-bg"
+        "gouda-bg",
+        "edam-bg"
       ],
       "baruk": [
 				"mozzarella-bg",
@@ -53,8 +59,8 @@
 				"dehoja-bg"
 			],
       "costero": [
-        "blancofreir-costero-bg",
-        "blancofreir-costero-bg",
+        "holandes-costero-bg",
+        "amarillofreir-costero-bg",
         "blancofreir-costero-bg",
         "blancofreir-costero-bg"
       ]
@@ -63,7 +69,8 @@
   "productShots": {
     "rottis": [
       "shot-holandes",
-      "shot-gouda"
+      "shot-gouda",
+      "shot-edam"
     ],
     "baruk": [
 			"shot-mozzarella",

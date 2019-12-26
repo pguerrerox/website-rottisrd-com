@@ -1,6 +1,6 @@
 <template>
 	<section class="main">
-		<Slideshow :slides="slides" />
+		<!-- <Slideshow :slides="slides" :slideshowPos="slideshowPos"/> -->
 		<Sign :id="1" :data="data" />
 		<Products :data="data" :media="media" />
 	</section>
@@ -25,6 +25,7 @@ export default {
 	data() {
 		return {
 			slides: media.slideshow,
+			slideshowPos: 2,
 			data: productosData.es,
 			media
 		}

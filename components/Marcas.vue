@@ -3,10 +3,10 @@
 		<div v-for="item in data" :key="item.id" class="marcas-wrapper">
 			<div class="marcas-top" :class="{ reverse: item.index % 2 != 0}">
 				<p v-html="item.info"></p>
-				<img :src="require('~/assets/images/productShots/' + productShot[marca][item.index] +	'.png')"/>
+				<img :src="require('~/assets/images/productShots/' + productShot[marca][item.index] +	'.webp')"/>
 			</div>
 			<div class="marcas-ilustracion">
-				<img :src="require('~/assets/images/banners/marcas/' + banners[marca][item.index] +	'.png')"/>
+				<img :src="require('~/assets/images/banners/marcas/' + banners[marca][item.index] +	'.webp')"/>
 			</div>
 		</div>
 	</section>
@@ -59,8 +59,7 @@ export default {
 }
 .marcas-top p {
 	min-width: 400px;
-	/* width: 700px; */
-	max-width: 550px;
+	max-width: 600px;
 	text-align: justify;
 }
 .marcas-top img{
@@ -69,7 +68,7 @@ export default {
 }
 .marcas-ilustracion {
 	width: 100%;
-	/* height: 450px; */
+	height: 550px;
 	overflow: hidden;
 }
 .marcas-ilustracion img {

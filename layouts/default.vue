@@ -1,21 +1,31 @@
 <template>
 	<div class="layout">
-		<Header />
+		<Header :logo="logo" />
 		<nuxt />
 		<Footer />
 	</div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
+// data
+import media from '~/data/media.json';
 
-import "~/assets/css/normalize.css"
+// components
+import Header from '~/components/Header.vue';
+import Footer from '~/components/Footer.vue';
+
+// others
+import "~/assets/css/normalize.css";
 
 export default {
 	components: {
 		Header,
 		Footer
+	},
+	data(){
+		return{
+			logo: media.mainLogo
+		}
 	}
 }
 </script>
