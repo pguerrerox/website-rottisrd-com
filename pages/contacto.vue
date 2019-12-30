@@ -1,17 +1,14 @@
 <template>
 	<section class="main">
-		<Slideshow :slides="slides" />
-		<Info />
-		<hr />
-		<Form />
-		<hr />
 		<Empleo />
+		<Info />
+		<slideshow :slides="slides" :slideshowPos="slideshowPos"/>
 	</section>
 </template>
 
 <script>
 // data
-import media from '~/data/media.json'
+import media from '~/data/media.json';
 
 // components
 import Slideshow from '~/components/Slideshow.vue';
@@ -28,7 +25,8 @@ export default {
 	},
 	data(){
 		return{
-			slides: media.slideshow
+			slides: media.slideshow,
+			slideshowPos: 0,
 		}
 	},
 	metaInfo: {
@@ -38,10 +36,4 @@ export default {
 </script>
 
 <style scoped>
-hr {
-    width: 100%;
-    border: 1px solid #cc3333;
-    margin: 20px auto 20px auto;
-    
-}
 </style>

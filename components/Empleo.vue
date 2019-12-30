@@ -1,9 +1,8 @@
 <template>
-  <section class="forma-empleo">
+  <section class="forma-empleo" :style="styleBG" >
     <div class="forma-container">
-      <h2>¿Quieres <strong>trabajar</strong> con nosotros?</h2>
-
       <div class="forma-text">
+        <h2>¿Quieres <strong>trabajar</strong> con nosotros?</h2>
         <p>
           Usando el siguiente formulario podras enviarnos tu <strong>curriculum vitae (CV)</strong>, no olvides completar con informacion real, de otra forma no podremos evaluarte.<br>
           El formulario solo permite enviar archivos PDF y el tamaño máximo es de 2 megabytes (MB).
@@ -12,7 +11,6 @@
 
       <div class="forma-wrapper">
         <div class="formulario-empleo">
-
           <!-- PENDING ACTION -->
           <form class="form-empleo" method="POST" action="" enctype="multipart/form-data">
             <label for="name">Nombre*</label>
@@ -42,26 +40,55 @@
 </template>
 
 <script>
-export default {}
+// data
+import media from '~/data/media.json';
+
+export default {
+  data(){
+    let bgBaseUrl = media.banners.contacto.empleoBG;
+    return {
+      bgPath: require('~/assets/images/banners/contacto/' + bgBaseUrl + '.webp'),
+    }
+  },
+  computed: {
+    styleBG(){
+      return {
+        '--background-Image': 'url(' + this.bgPath + ')',
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
 .forma-empleo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image: var(--background-Image);
+  background-image: var(--background-Image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   width: 100%;
+  height: 700px;
   margin: 50px auto;
+  display: flex;
+  align-items: center;
 }
 .forma-container{
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 	/* max-width: 1440px; */
 	/* margin: 0 20px; */
 }
 .forma-text{
+  width: 500px;
   align-self: center;
 	text-align: justify;
+}
+.forma-text h2, p{
+  color: #fff;
 }
 .forma-wrapper {
 	display: flex;
