@@ -1,6 +1,6 @@
 <template>
   <Section class="texto">
-    <div class="texto-texto short" :class="{noMargin: texto}" v-if="texto">
+    <div class="texto-texto short" :class="{noMargin : texto, noBoMargin : imagen}" v-if="texto">
       <h1>{{titulo}}</h1>
       <p v-for="text in parrafo" :key="text.id" v-html="text.content"></p>
     </div>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="texto-ilustracion" v-if="imagen">
-      <img :src="require('~/assets/images/banners/nosotros/' + imagenes[id] +	'.webp')"/>
+      <img :src="require('~/assets/images/banners/nosotros/' + imagenes[id] +	'.png')"/>
     </div>
   </Section>
 </template>
@@ -39,11 +39,13 @@ export default {
 
 <style scoped>
 .texto{
+  background-color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .short{
   width: 100%;
@@ -52,13 +54,20 @@ export default {
 .noMargin {
 	margin: 75px 0 !important;
 }
+.noBoMargin{
+  margin: 75px 0 0 0 !important;
+}
 .texto-texto{
+  padding: 0 30px;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .texto-filosofia{
+  padding: 0 30px;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,14 +80,15 @@ export default {
   width: 25%;
 }
 .texto-ilustracion{
-  width: 100%;
-  height: 450px;
+  /* width: 100%; */
+  margin: 50px auto;
+  /* height: 450px; */
   overflow: hidden;
 }
 .texto-ilustracion img{
-  width: 100%;
-	height: 100%;
-	object-position: center;
-	object-fit: cover;
+  /* width: 100%; */
+	/* height: 100%; */
+	/* object-position: center; */
+	/* object-fit: cover; */
 }
 </style>

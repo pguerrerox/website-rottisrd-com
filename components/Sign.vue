@@ -32,6 +32,7 @@ export default {
 
 <style scoped>
 .sign {
+	background-color: #fff;
 	width: 100%;
 	max-height: 450px;
 	display: flex;

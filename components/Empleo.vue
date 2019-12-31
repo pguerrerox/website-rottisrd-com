@@ -1,6 +1,6 @@
 <template>
-  <section class="forma-empleo" :style="styleBG" >
-    <div class="forma-container">
+  <section class="forma-empleo">
+    <div class="forma-container" :style="styleBG">
       <div class="forma-text">
         <h2>¿Quieres <strong>trabajar</strong> con nosotros?</h2>
         <p>
@@ -62,25 +62,25 @@ export default {
 
 <style scoped>
 .forma-empleo {
-  background-image: var(--background-Image);
-  background-image: var(--background-Image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background: #fff;
   width: 100%;
   height: 700px;
-  margin: 50px auto;
+  padding: 50px 0 0 0;
   display: flex;
   align-items: center;
 }
 .forma-container{
+  background-image: var(--background-Image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 50px auto;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-	/* max-width: 1440px; */
-	/* margin: 0 20px; */
+  align-content: center;
 }
 .forma-text{
   width: 500px;
@@ -93,7 +93,9 @@ export default {
 .forma-wrapper {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+  justify-content: center;
+  height: fit-content;
+  align-self: center;
 }
 .formulario-empleo {
 	max-width: 500px;

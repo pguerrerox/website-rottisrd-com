@@ -1,15 +1,15 @@
 <template>
   <section class="info">
     <div class="info-header">
-      <h1 class="normal">
-        Gracias por su interes en
-        <span>Fabrica Rottis</span>
-      </h1>
-      <h2>Sus comentarios o inquietudes son de gran importancia para nosotros.</h2>
+      <div class="header-wraper">
+        <h1 class="normal">
+          Gracias por su interes en
+          <span>Fabrica Rottis</span>
+        </h1>
+        <h2>Sus comentarios o inquietudes son de gran importancia para nosotros.</h2>
+      </div>
     </div>
-
     <hr />
-
     <div class="info-container">
       <div class="info-form">
         <Form />
@@ -18,9 +18,7 @@
         <InfoContacto />
       </div>
     </div>
-
     <hr />
-
     <div class="info-negocios">
       <InfoNegocios />
     </div>
@@ -50,10 +48,17 @@ h2 {
   text-align: center;
 }
 .info {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 50px auto;
+  /* margin: 50px auto; */
+}
+.info-header{
+
+}
+.header-wraper{
+  margin: 50px 0;
 }
 .normal {
   font-family: "gotham";

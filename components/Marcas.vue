@@ -30,6 +30,7 @@ export default {
 
 <style scoped>
 .marcas {
+	background-color: #fff;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -48,7 +49,7 @@ export default {
 }
 .marcas-top {
 	width: 100%;
-	margin: 25px 0 0 0;
+	margin: 50px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -68,7 +69,7 @@ export default {
 }
 .marcas-ilustracion {
 	width: 100%;
-	height: 550px;
+	/* height: 550px; */
 	overflow: hidden;
 }
 .marcas-ilustracion img {

@@ -1,7 +1,6 @@
 <template>
 	<header class="header">
-				<div class="header-secundary">
-		</div>
+				<!-- <div class="header-secundary"></div> -->
 
 		<div class="header-content">
 			<nuxt-link to="/">
@@ -29,6 +28,7 @@ export default {
 
 <style scoped>
 .header {
+	background-color:#fff;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -37,7 +37,7 @@ export default {
 }
 .header-content {
 	width: 100%;
-	margin: 10px 0;
+	margin: 25px 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -52,7 +52,7 @@ export default {
 	text-decoration: none;
 	text-transform: capitalize;
 	color: #666666;
-	border-right: 2px solid #c00000;
+	border-right: 1px solid #c00000;
 }
 .nav-link:last-child{
 	border-right: none;
@@ -67,7 +67,7 @@ export default {
 .header-secundary{
 	width: 100%;
 	height: 35px;
-	border-bottom: 2px solid #c00000;
+	/* border-bottom: 2px solid #c00000; */
   display: flex;
   flex-direction: column;
 	justify-content: center;

@@ -1,6 +1,6 @@
 <template>
 	<section class="banner">
-		<img :src="require('~/assets/images/banners/index/' +	background[id - 1] + '.webp')"/>
+		<img :src="require('~/assets/images/banners/index/' +	background[id - 1] + '.png')"/>
 		<div class="banner-wraper">
 			<div class="banner-content">
 				<h1>{{ h1 }}</h1>
@@ -36,7 +36,7 @@ export default {
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 700px;
+	/* height: 700px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -44,12 +44,12 @@ export default {
 	overflow: hidden;
 }
 .banner img {
-	position: absolute;
+	/* position: absolute; */
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
+	/* z-index: -1; */
 	object-position: center;
 	object-fit: cover;
 }

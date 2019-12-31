@@ -28,6 +28,7 @@ export default {
 
 <style scoped>
 .intro {
+	background: #fff;
 	width: 100%;
 	min-height: 300px;
 	display: flex;
@@ -38,6 +39,7 @@ export default {
 }
 .intro-wrapper {
 	width: 100%;
+	margin: 50px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;

@@ -56,7 +56,7 @@ export default {
 }
 .images{
 	width: 100%;
-	height: 500px;
+	/* height: 500px; */
 }
 .slides-imgs {
 	display: block;

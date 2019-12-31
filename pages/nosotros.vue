@@ -1,8 +1,10 @@
 <template>
   <section class="main">
-    <!-- <Slideshow :slides="slides" :slideshowPos="slideshowPos" /> -->
+    <Slideshow :slides="slides" :slideshowPos="slideshowPos" />
     <Texto :state="historia"/>
+    <hr/>
     <Texto :state="filosofia"/>
+    <hr/>
     <Texto :state="calidad"/>
   </section>
 </template>
@@ -30,7 +32,7 @@ export default {
         imagenes: media.banners.nosotros,
         id: 0,
         texto: true,
-        imagen: true,
+        imagen: false,
         filosofia: false
       },
       filosofia:{
@@ -38,7 +40,7 @@ export default {
         imagenes: media.banners.nosotros,
         id: 1,
         texto: false,
-        imagen: true,
+        imagen: false,
         filosofia: true
       },
       calidad:{

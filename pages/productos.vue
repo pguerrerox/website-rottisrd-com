@@ -1,6 +1,6 @@
 <template>
 	<section class="main">
-		<!-- <Slideshow :slides="slides" :slideshowPos="slideshowPos"/> -->
+		<Slideshow :slides="slides" :slideshowPos="slideshowPos"/>
 		<Sign :id="1" :data="data" />
 		<Products :data="data" :media="media" />
 	</section>
