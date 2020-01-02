@@ -11,11 +11,10 @@
 
       <div class="forma-wrapper">
         <div class="formulario-empleo">
-          <!-- PENDING ACTION -->
-          <form class="form-empleo" method="POST" action="" enctype="multipart/form-data">
-            <label for="name">Nombre*</label>
+          <form class="form-empleo" id="form-empleo" method="POST" action="https://static-email.herokuapp.com/empleo/rottis" enctype="multipart/form-data">
+            <label for="nombre">Nombre*</label>
             <span>
-              <input name="name" type="text" placeholder="Jose Pérez" required="true">
+              <input name="nombre" type="text" placeholder="Jose Pérez" required="true">
             </span>
 
             <label for="email">Email*</label>
@@ -23,13 +22,12 @@
               <input name="email" type="email" placeholder="jose.perez@ejemplo.com" required="true">
             </span>
 
-            <label for="afile">Archivo*</label><br>
+            <label for="attachFile">Archivo*</label><br>
             <span>
-              <input name="afile" type="file" accept="application/pdf,.pdf " required="true">
+              <input name="attachFile" type="file" accept="application/pdf,.pdf " required="true">
             </span>
 
-            <!-- RECAPTCHA DIV -->
-            <!-- <div class="g-recaptcha" data-sitekey="6LeW0hIUAAAAADCej2_UlXjqbLAd354s-X11oKRA"></div> -->
+            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"></div>
             <input class="button" type="submit" name="enviar" value="ENVIAR">
           </form>
         </div>
@@ -56,7 +54,7 @@ export default {
         '--background-Image': 'url(' + this.bgPath + ')',
       }
     }
-  }
+  },
 }
 </script>
 
@@ -132,8 +130,8 @@ select:focus {
 	width: 100%;
 	margin: 0 auto;
 }
-/* .g-recaptcha {
+.g-recaptcha {
 	text-align: -webkit-center;
 	margin: 5px auto 15px auto;
-}  */
+} 
 </style>

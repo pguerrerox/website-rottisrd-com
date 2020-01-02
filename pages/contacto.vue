@@ -17,6 +17,13 @@ import Form from '~/components/Form.vue';
 import Empleo from '~/components/Empleo.vue';
 
 export default {
+	head(){
+		return {
+			script:[
+				{src: "https://www.google.com/recaptcha/api.js"}
+			]
+		}
+	},
 	components: {
 		Info,
 		Form,

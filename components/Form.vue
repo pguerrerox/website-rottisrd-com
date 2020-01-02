@@ -15,8 +15,7 @@
 
       <div class="forma-wrapper">
         <div class="formulario-contacto">
-          <!-- PENDING ACTION -->
-          <form class="form-contacto" method="POST" action enctype="multipart/form-data">
+          <form class="form-contacto" method="POST" action="https://static-email.herokuapp.com/contacto/rottis" enctype="multipart/form-data">
             <label for="nombre">Nombre</label>
             <span>
               <input name="name" type="text" placeholder="Jose Pérez" required="true" />
@@ -58,8 +57,7 @@
               ></textarea>
             </span>
 
-            <!-- RECAPTCHA DIV -->
-            <!-- <div class="g-recaptcha" data-sitekey="6LeW0hIUAAAAADCej2_UlXjqbLAd354s-X11oKRA"></div> -->
+            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"></div>
             <input class="button" type="submit" name="enviar" value="ENVIAR" />
           </form>
         </div>
@@ -126,8 +124,8 @@ select:focus {
   width: 100%;
   margin: 0 auto;
 }
-/* .g-recaptcha {
+.g-recaptcha {
 	text-align: -webkit-center;
 	margin: 5px auto 15px auto;
-}  */
+} 
 </style>
