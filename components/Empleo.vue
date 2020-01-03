@@ -12,6 +12,10 @@
       <div class="forma-wrapper">
         <div class="formulario-empleo">
           <form class="form-empleo" id="form-empleo" method="POST" action="https://static-email.herokuapp.com/empleo/rottis" enctype="multipart/form-data">
+          <!-- Testing
+          <form class="form-empleo" id="form-empleo" method="POST" action="http://localhost:8000/empleo/testing" enctype="multipart/form-data"> -->
+            <input type="hidden" name="referrer" :value="referrer" >
+
             <label for="nombre">Nombre*</label>
             <span>
               <input name="nombre" type="text" placeholder="Jose Pérez" required="true">
@@ -24,10 +28,12 @@
 
             <label for="attachFile">Archivo*</label><br>
             <span>
-              <input name="attachFile" type="file" accept="application/pdf,.pdf " required="true">
+              <input name="attachFile" type="file" accept="application/pdf,.pdf">
             </span>
-
             <div id='recaptcha' class="g-recaptcha" data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"></div>
+            <!-- Testing recaptcha -->
+            <!-- <div id='recaptcha' class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> -->
+            
             <input class="button" type="submit" name="enviar" value="ENVIAR">
           </form>
         </div>
@@ -45,6 +51,7 @@ export default {
   data(){
     let bgBaseUrl = media.banners.contacto.empleoBG;
     return {
+      referrer: document.URL,
       bgPath: require('~/assets/images/banners/contacto/' + bgBaseUrl + '.webp'),
     }
   },
@@ -83,55 +90,55 @@ export default {
 .forma-text{
   width: 500px;
   align-self: center;
-	text-align: justify;
+  text-align: justify;
 }
 .forma-text h2, p{
   color: #fff;
 }
 .forma-wrapper {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   height: fit-content;
   align-self: center;
 }
 .formulario-empleo {
-	max-width: 500px;
-	margin: 50px 25px;
-	padding: 35px;
-	background-color: #e0e0e0;
+  max-width: 500px;
+  margin: 50px 25px;
+  padding: 35px;
+  background-color: #e0e0e0;
 }
 label {
-	font-weight: bold;
-	color: #c00000;
+  font-weight: bold;
+  color: #c00000;
 }
 textarea,
 input[type='text'],
 input[type='email'],
 input[type='file'],
 select {
-	display: inline-block;
-	width: 100%;
-	margin: 5px 0 15px 0;
-	padding: 10px;
-	border: 2px solid #ccc;
-	box-sizing: border-box;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 textarea:focus,
 input[type='text']:focus,
 input[type='email']:focus,
 input[type='file']:focus,
 select:focus {
-	border: 2px solid #c00000;
+  border: 2px solid #c00000;
 }
 .button {
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 .g-recaptcha {
-	text-align: -webkit-center;
-	margin: 5px auto 15px auto;
-} 
+  text-align: -webkit-center;
+  margin: 5px auto 15px auto;
+}
 </style>

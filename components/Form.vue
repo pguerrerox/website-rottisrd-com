@@ -16,6 +16,10 @@
       <div class="forma-wrapper">
         <div class="formulario-contacto">
           <form class="form-contacto" method="POST" action="https://static-email.herokuapp.com/contacto/rottis" enctype="multipart/form-data">
+          <!-- Testing
+          <form class="form-contacto" method="POST" action="http://localhost:8000/contacto/testing" enctype="multipart/form-data"> -->
+            <input type="hidden" name="referrer" :value="referrer" >
+
             <label for="nombre">Nombre</label>
             <span>
               <input name="name" type="text" placeholder="Jose Pérez" required="true" />
@@ -58,6 +62,9 @@
             </span>
 
             <div id='recaptcha' class="g-recaptcha" data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"></div>
+            <!-- Testing recaptcha -->
+            <!-- <div id='recaptcha' class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> -->
+
             <input class="button" type="submit" name="enviar" value="ENVIAR" />
           </form>
         </div>
@@ -67,7 +74,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      referrer: document.URL,
+    }
+  }
+};
 </script>
 
 <style scoped>
