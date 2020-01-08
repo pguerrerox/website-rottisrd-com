@@ -16,8 +16,8 @@
       <div class="forma-wrapper">
         <div class="formulario-contacto">
           <form class="form-contacto" method="POST" action="https://static-email.herokuapp.com/contacto/rottis" enctype="multipart/form-data">
-          <!-- Testing
-          <form class="form-contacto" method="POST" action="http://localhost:8000/contacto/testing" enctype="multipart/form-data"> -->
+          <!-- <h1>Testing</h1>
+          <form class="form-contacto" method="POST" action="http://localhost:8000/contacto/testinggg" enctype="multipart/form-data"> -->
             <input type="hidden" name="referrer" :value="referrer" >
 
             <label for="nombre">Nombre</label>

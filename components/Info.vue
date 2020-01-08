@@ -41,9 +41,6 @@ export default {
 </script>
 
 <style scoped>
-hr {
-  /* margin: 25px 0; */
-}
 h2 {
   text-align: center;
 }
@@ -53,9 +50,6 @@ h2 {
   flex-direction: column;
   width: 100%;
   /* margin: 50px auto; */
-}
-.info-header{
-
 }
 .header-wraper{
   margin: 50px 0;
