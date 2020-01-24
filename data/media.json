@@ -1,11 +1,11 @@
 {
   "mainLogo": "logo",
-  "slideshow": [
-    "slide1",
-    "slide2",
-    "slide3",
-    "slide4"
-  ],
+  "slideshow": {
+    "index": "slide1",
+    "nosotros": "slide2",
+    "productos": "slide3",
+    "contacto": "slide1"
+  },
   "fijas": {
     "rottis": "fija1",
     "baruk": "fija2",

@@ -1,6 +1,6 @@
 <template>
 	<section class="banner">
-		<img :src="require('~/assets/images/banners/index/' +	background[id - 1] + '.png')"/>
+		<img :src="require('~/assets/images/banners/index/' +	background[id - 1] + '.webp')"/>
 		<div class="banner-wraper">
 			<div class="banner-content">
 				<h1>{{ h1 }}</h1>

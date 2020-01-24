@@ -13,7 +13,7 @@
     </div>
 
     <div class="texto-ilustracion" v-if="imagen">
-      <img :src="require('~/assets/images/banners/nosotros/' + imagenes[id] +	'.png')"/>
+      <img :src="require('~/assets/images/banners/nosotros/' + imagenes[id] +	'.webp')"/>
     </div>
   </Section>
 </template>

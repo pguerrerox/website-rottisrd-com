@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <Slideshow :slides="slides" :slideshowPos="slideshowPos" />
+    <Slideshow :slides="slides" :page="page" />
     <Texto :state="historia"/>
     <hr/>
     <Texto :state="filosofia"/>
@@ -26,7 +26,7 @@ export default {
   data(){
     return{
       slides: media.slideshow,
-      slideshowPos: 1,
+      page: "nosotros",
       historia:{
         content: content.es.historia,
         imagenes: media.banners.nosotros,

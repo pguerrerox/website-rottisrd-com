@@ -2,7 +2,7 @@
 	<section class="main">
 		<Empleo />
 		<Info />
-		<slideshow :slides="slides" :slideshowPos="slideshowPos"/>
+		<slideshow :slides="slides" :page="page"/>
 	</section>
 </template>
 
@@ -33,7 +33,7 @@ export default {
 	data(){
 		return{
 			slides: media.slideshow,
-			slideshowPos: 0,
+			page:"contacto",
 		}
 	},
 	metaInfo: {

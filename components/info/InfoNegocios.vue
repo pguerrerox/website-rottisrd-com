@@ -15,7 +15,7 @@
     </div>
     <div class="vertical-line"></div>
     <div class="negocios-locales">
-      <h2>Negocios Internacionales y Exportaciones</h2>
+      <h2>Negocios en República Dominicana</h2>
       <p>
         Para informaciones de negocios en República Dominicana, contacte nuestro departamento de servicio al cliente.
         <strong>Tel. (809) 571-9821</strong>
@@ -35,6 +35,10 @@ export default {};
 </script>
 
 <style scoped>
+h2{
+  font-weight: 800;
+  font-size: 1.85em;
+}
 .info-negocios {
   display: flex;
   flex-direction: row;
@@ -44,7 +48,7 @@ export default {};
 }
 .negocios-internacionales,
 .negocios-locales {
-  width: 40%;
+  width: 35%;
 }
 .negocios-internacionales .negocios-locales,
 h2 {
