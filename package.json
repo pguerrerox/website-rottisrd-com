@@ -12,11 +12,9 @@
     "deploy": " gh-pages -d dist --dotfiles"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
-    "nuxt": "^2.11.0"
+    "@nuxtjs/axios": "^5.9.3"
   },
   "devDependencies": {
-    "core-js": "^3.6.4",
     "gh-pages": "^2.1.1",
     "serialize-javascript": "^2.1.2"
   }

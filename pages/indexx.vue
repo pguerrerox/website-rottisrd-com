@@ -1,5 +1,5 @@
 <template>
-	<section class="main">
+  <section class="main">
     <Slideshow :slides="slides" :page="page" />
     <Sign :id="1" :data="data" />
     <Banner :id="1" :data="data" :background="banners" />
@@ -25,16 +25,15 @@ export default {
     Banner
   },
   data() {
-		return {
-			slides: media.slideshow,
+    return {
+      slides: media.slideshow,
       page: "index",
-			data: indexData.es,
-      banners: media.banners.index,
-		}
-	}
+      data: indexData.es,
+      banners: media.banners.index
+    }
+  }
 }
 </script>
 
 <style>
-
 </style>

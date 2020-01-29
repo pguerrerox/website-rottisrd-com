@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="quater">
-				<h3>Numero de Contacto</h3>
+				<h3>Número de Contacto</h3>
 				<div class="info">
 					<a href="tel:809-571-9821" target="_blank" title="Click para llamar">
 							Tel: 809-571-9821
