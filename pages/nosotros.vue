@@ -1,18 +1,18 @@
 <template>
   <section class="main">
     <Slideshow :slides="slides" :page="page" />
-    <Texto :state="historia"/>
-    <hr/>
-    <Texto :state="filosofia"/>
-    <hr/>
-    <Texto :state="calidad"/>
+    <Texto :state="historia" />
+    <hr />
+    <Texto :state="filosofia" />
+    <hr />
+    <Texto :state="calidad" />
   </section>
 </template>
 
 <script>
 // data
-import media from "~/data/media.json"
-import content from "~/data/data-nosotros.json"
+import media from "~/data/media.json";
+import content from "~/data/data-nosotros.json";
 
 // components
 import Slideshow from "~/components/Slideshow.vue";
@@ -23,11 +23,11 @@ export default {
     Slideshow,
     Texto
   },
-  data(){
-    return{
+  data() {
+    return {
       slides: media.slideshow,
       page: "nosotros",
-      historia:{
+      historia: {
         content: content.es.historia,
         imagenes: media.banners.nosotros,
         id: 0,
@@ -35,7 +35,7 @@ export default {
         imagen: false,
         filosofia: false
       },
-      filosofia:{
+      filosofia: {
         content: content.es.filosofia,
         imagenes: media.banners.nosotros,
         id: 1,
@@ -43,19 +43,15 @@ export default {
         imagen: false,
         filosofia: true
       },
-      calidad:{
+      calidad: {
         content: content.es.calidad,
         imagenes: media.banners.nosotros,
         id: 2,
         texto: true,
         imagen: true,
         filosofia: false
-      },
-    }
+      }
+    };
   }
-}
+};
 </script>
-
-<style>
-
-</style>

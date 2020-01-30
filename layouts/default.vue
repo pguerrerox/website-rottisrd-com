@@ -1,4 +1,4 @@
-<template class="negro">
+<template>
   <div class="layout">
     <Header :logo="logo" />
     <nuxt />
@@ -8,11 +8,11 @@
 
 <script>
 // data
-import media from '~/data/media.json';
+import media from "~/data/media.json";
 
 // components
-import Header from '~/components/Header.vue';
-import Footer from '~/components/Footer.vue';
+import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 
 // others
 import "~/assets/css/normalize.css";
@@ -22,27 +22,20 @@ export default {
     Header,
     Footer
   },
-  data(){ 
-    return{
-      logo: media.mainLogo,
-    }
+  data() {
+    return {
+      logo: media.mainLogo
+    };
   }
-}
-    
+};
 </script>
 
 <style>
-.negro{
-  background-color: #333;
+html,
+body {
+  font-family: "gotham";
 }
-.color-change{
-  position: absolute;
-  top: 0
-}
-html, body {
-  font-family: 'gotham';
-}
-.layout{
+.layout {
   max-width: 1250px;
   margin: 0 auto;
 }
@@ -53,7 +46,7 @@ h1 {
   margin: 0.25em 0;
   color: #c00000;
 }
-h2{
+h2 {
   font-size: 1.5em;
   font-weight: normal;
   margin: 10px 0;

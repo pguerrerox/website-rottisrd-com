@@ -13,8 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.3",
-    "instafeed.js": "^1.4.1",
-    "vue-instagram": "^3.0.0"
+    "instafeed.js": "^1.4.1"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",

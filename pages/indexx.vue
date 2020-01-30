@@ -10,13 +10,13 @@
 
 <script>
 // data
-import indexData from '~/data/data-index.json'
-import media from '~/data/media.json'
+import indexData from "~/data/data-index.json";
+import media from "~/data/media.json";
 
-//components
-import Slideshow from '~/components/Slideshow.vue'
-import Sign from '~/components/Sign.vue'
-import Banner from '~/components/Banner.vue'
+// components
+import Slideshow from "~/components/Slideshow.vue";
+import Sign from "~/components/Sign.vue";
+import Banner from "~/components/Banner.vue";
 
 export default {
   components: {
@@ -30,10 +30,7 @@ export default {
       page: "index",
       data: indexData.es,
       banners: media.banners.index
-    }
+    };
   }
-}
+};
 </script>
-
-<style>
-</style>

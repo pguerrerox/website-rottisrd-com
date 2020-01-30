@@ -6,12 +6,11 @@
     <Team :departamento="transporte.departamento" :pics="transporte.pics" />
     <Team :departamento="mantenimiento.departamento" :pics="mantenimiento.pics" />
     <Team :departamento="seguridad.departamento" :pics="seguridad.pics" />
-
   </section>
 </template>
 
 <script>
-//data
+// data
 import directoresInfo from "~/data/team/directores.json";
 import administrativosInfo from "~/data/team/administrativos.json";
 import plantaInfo from "~/data/team/planta.json";
@@ -34,11 +33,7 @@ export default {
       transporte: transporteInfo,
       mantenimiento: mantenimientoInfo,
       seguridad: seguridadInfo
-    }
+    };
   }
-}
+};
 </script>
-
-<style>
-
-</style>
