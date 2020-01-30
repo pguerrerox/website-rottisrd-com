@@ -19,7 +19,13 @@ let feed = new Instafeed({
 });
 feed.run();
 
-export default {};
+export default {
+  beforeMount: function(){
+    return {
+      instafeed: feed.run()
+    }
+  }
+}
 </script>
 
 <style>
