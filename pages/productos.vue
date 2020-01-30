@@ -8,13 +8,13 @@
 
 <script>
 // data
-import productosData from '~/data/data-productos.json'
-import media from '~/data/media.json'
+import productosData from '~/data/data-productos.json';
+import media from '~/data/media.json';
 
 // components
-import Slideshow from '~/components/Slideshow.vue'
-import Sign from '~/components/Sign.vue'
-import Products from '~/components/Products.vue'
+import Slideshow from '~/components/Slideshow.vue';
+import Sign from '~/components/Sign.vue';
+import Products from '~/components/Products.vue';
 
 export default {
 	components: {
