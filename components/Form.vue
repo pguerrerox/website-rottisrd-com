@@ -15,10 +15,15 @@
 
       <div class="forma-wrapper">
         <div class="formulario-contacto">
-          <form class="form-contacto" method="POST" action="https://static-email.herokuapp.com/contacto/rottis" enctype="multipart/form-data">
-          <!-- <h1>Testing</h1>
-          <form class="form-contacto" method="POST" action="http://localhost:8000/contacto/testinggg" enctype="multipart/form-data"> -->
-            <input type="hidden" name="referrer" :value="referrer" >
+          <form
+            class="form-contacto"
+            method="POST"
+            action="https://static-email.herokuapp.com/contacto/rottis"
+            enctype="multipart/form-data"
+          >
+            <!-- <h1>Testing</h1>
+            <form class="form-contacto" method="POST" action="http://localhost:8000/contacto/testinggg" enctype="multipart/form-data">-->
+            <input type="hidden" name="referrer" :value="referrer" />
 
             <label for="nombre">Nombre</label>
             <span>
@@ -61,7 +66,11 @@
               ></textarea>
             </span>
 
-            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"></div>
+            <div
+              id="recaptcha"
+              class="g-recaptcha"
+              data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"
+            ></div>
             <!-- Testing recaptcha -->
             <!-- <div id='recaptcha' class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> -->
 
@@ -75,10 +84,10 @@
 
 <script>
 export default {
-  data(){
-    return{
-      referrer: document.URL,
-    }
+  data() {
+    return {
+      referrer: document.URL
+    };
   }
 };
 </script>
@@ -138,7 +147,7 @@ select:focus {
   margin: 0 auto;
 }
 .g-recaptcha {
-	text-align: -webkit-center;
-	margin: 5px auto 15px auto;
-} 
+  text-align: -webkit-center;
+  margin: 5px auto 15px auto;
+}
 </style>

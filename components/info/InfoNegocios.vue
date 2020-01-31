@@ -35,7 +35,7 @@ export default {};
 </script>
 
 <style scoped>
-h2{
+h2 {
   font-weight: 800;
   font-size: 1.85em;
 }

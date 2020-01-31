@@ -2,67 +2,81 @@
   <section class="forma-empleo">
     <div class="forma-container" :style="styleBG">
       <div class="forma-text">
-        <h2>¿Quieres <strong>trabajar</strong> con nosotros?</h2>
+        <h2>
+          ¿Quieres
+          <strong>trabajar</strong> con nosotros?
+        </h2>
         <p>
-          Usando el siguiente formulario podras enviarnos tu <strong>curriculum vitae (CV)</strong>, no olvides completar con informacion real, de otra forma no podremos evaluarte.<br>
-          El formulario solo permite enviar archivos PDF y el tamaño máximo es de 2 megabytes (MB).
+          Usando el siguiente formulario podras enviarnos tu
+          <strong>curriculum vitae (CV)</strong>, no olvides completar con informacion real, de otra forma no podremos evaluarte.
+          <br />El formulario solo permite enviar archivos PDF y el tamaño máximo es de 2 megabytes (MB).
         </p>
       </div>
 
       <div class="forma-wrapper">
         <div class="formulario-empleo">
-          <form class="form-empleo" id="form-empleo" method="POST" action="https://static-email.herokuapp.com/empleo/rottis" enctype="multipart/form-data">
-          <!-- Testing
-          <form class="form-empleo" id="form-empleo" method="POST" action="http://localhost:8000/empleo/testing" enctype="multipart/form-data"> -->
-            <input type="hidden" name="referrer" :value="referrer" >
+          <form
+            class="form-empleo"
+            id="form-empleo"
+            method="POST"
+            action="https://static-email.herokuapp.com/empleo/rottis"
+            enctype="multipart/form-data"
+          >
+            <!-- Testing
+            <form class="form-empleo" id="form-empleo" method="POST" action="http://localhost:8000/empleo/testing" enctype="multipart/form-data">-->
+            <input type="hidden" name="referrer" :value="referrer" />
 
             <label for="nombre">Nombre*</label>
             <span>
-              <input name="nombre" type="text" placeholder="Jose Pérez" required="true">
+              <input name="nombre" type="text" placeholder="Jose Pérez" required="true" />
             </span>
 
             <label for="email">Email*</label>
             <span>
-              <input name="email" type="email" placeholder="jose.perez@ejemplo.com" required="true">
+              <input name="email" type="email" placeholder="jose.perez@ejemplo.com" required="true" />
             </span>
 
-            <label for="attachFile">Archivo*</label><br>
+            <label for="attachFile">Archivo*</label>
+            <br />
             <span>
-              <input name="attachFile" type="file" accept="application/pdf,.pdf">
+              <input name="attachFile" type="file" accept="application/pdf, .pdf" />
             </span>
-            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"></div>
+            <div
+              id="recaptcha"
+              class="g-recaptcha"
+              data-sitekey="6Le71csUAAAAAPue6urY3ZnYIlGNhM0A0W4iPvRI"
+            ></div>
             <!-- Testing recaptcha -->
             <!-- <div id='recaptcha' class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> -->
-            
-            <input class="button" type="submit" name="enviar" value="ENVIAR">
+
+            <input class="button" type="submit" name="enviar" value="ENVIAR" />
           </form>
         </div>
       </div>
-
     </div>
   </section>
 </template>
 
 <script>
 // data
-import media from '~/data/media.json';
+import media from "~/data/media.json";
 
 export default {
-  data(){
+  data() {
     let bgBaseUrl = media.banners.contacto.empleoBG;
     return {
       referrer: document.URL,
-      bgPath: require('~/assets/images/banners/contacto/' + bgBaseUrl + '.webp'),
-    }
+      bgPath: require("~/assets/images/banners/contacto/" + bgBaseUrl + ".webp")
+    };
   },
   computed: {
-    styleBG(){
+    styleBG() {
       return {
-        '--background-Image': 'url(' + this.bgPath + ')',
-      }
+        "--background-Image": "url(" + this.bgPath + ")"
+      };
     }
-  },
-}
+  }
+};
 </script>
 
 <style scoped>
@@ -74,7 +88,7 @@ export default {
   display: flex;
   align-items: center;
 }
-.forma-container{
+.forma-container {
   background-image: var(--background-Image);
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,12 +101,13 @@ export default {
   justify-content: center;
   align-content: center;
 }
-.forma-text{
+.forma-text {
   width: 500px;
   align-self: center;
   text-align: justify;
 }
-.forma-text h2, p{
+.forma-text h2,
+p {
   color: #fff;
 }
 .forma-wrapper {
@@ -113,9 +128,9 @@ label {
   color: #c00000;
 }
 textarea,
-input[type='text'],
-input[type='email'],
-input[type='file'],
+input[type="text"],
+input[type="email"],
+input[type="file"],
 select {
   display: inline-block;
   width: 100%;
@@ -127,9 +142,9 @@ select {
   transition: 0.3s;
 }
 textarea:focus,
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='file']:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
 select:focus {
   border: 2px solid #c00000;
 }

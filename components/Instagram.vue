@@ -20,18 +20,18 @@ let feed = new Instafeed({
 feed.run();
 
 export default {
-  beforeMount: function(){
+  beforeMount: function() {
     return {
       instafeed: feed.run()
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
-h1{
+h1 {
   text-align: center;
-  margin: 30px 0
+  margin: 30px 0;
 }
 .instafeed {
   display: flex;
@@ -43,10 +43,10 @@ h1{
   position: relative;
   width: 25rem;
 }
-.instafeed > :nth-child(3n-1){
+.instafeed > :nth-child(3n-1) {
   margin: 0 25px;
 }
-.instafeed > :nth-child(n+4){
+.instafeed > :nth-child(n + 4) {
   margin: 25px 0 0 0;
 }
 .instagram__pics a {

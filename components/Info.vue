@@ -51,7 +51,7 @@ h2 {
   width: 100%;
   /* margin: 50px auto; */
 }
-.header-wraper{
+.header-wraper {
   margin: 50px 0;
 }
 .normal {

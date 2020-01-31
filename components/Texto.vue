@@ -13,7 +13,7 @@
     </div>
 
     <div class="texto-ilustracion" v-if="imagen">
-      <img :src="require('~/assets/images/banners/nosotros/' + imagenes[id] +	'.webp')"/>
+      <img :src="require('~/assets/images/banners/nosotros/' + imagenes[id] +	'.webp')" />
     </div>
   </Section>
 </template>
@@ -21,9 +21,9 @@
 <script>
 export default {
   props: {
-    state: Object,
+    state: Object
   },
-  data(){
+  data() {
     return {
       titulo: this.state.content.titulo,
       parrafo: this.state.content.texto,
@@ -32,32 +32,31 @@ export default {
       texto: this.state.texto,
       imagen: this.state.imagen,
       filosofia: this.state.filosofia
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
-.texto{
+.texto {
   background-color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.short{
+.short {
   width: 100%;
 }
 /* conditional classes */
 .noMargin {
-	margin: 75px 0 !important;
+  margin: 75px 0 !important;
 }
-.noBoMargin{
+.noBoMargin {
   margin: 75px 0 0 0 !important;
 }
-.texto-texto{
+.texto-texto {
   padding: 0 30px;
   width: auto;
   display: flex;
@@ -65,30 +64,24 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.texto-filosofia{
+.texto-filosofia {
   padding: 0 30px;
   width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.texto-filosofia div{
+.texto-filosofia div {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   width: 25%;
 }
-.texto-ilustracion{
+.texto-ilustracion {
   /* width: 100%; */
   margin: 50px auto;
   /* height: 450px; */
   overflow: hidden;
-}
-.texto-ilustracion img{
-  /* width: 100%; */
-	/* height: 100%; */
-	/* object-position: center; */
-	/* object-fit: cover; */
 }
 </style>

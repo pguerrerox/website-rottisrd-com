@@ -3,8 +3,14 @@
     <h1>{{ departamento }}</h1>
     <div class="container">
       <div class="container-pic" :class="{tres: tres}" v-for="pic in pics" :key="pic.id">
-        <img :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-0.webp')" class="fir-img" />
-        <img :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-1.webp')" class="sec-img" />
+        <img
+          :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-0.webp')"
+          class="fir-img"
+        />
+        <img
+          :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-1.webp')"
+          class="sec-img"
+        />
       </div>
     </div>
   </section>
@@ -25,7 +31,7 @@ export default {
 .equipo {
   background: #ffffff;
 }
-.tres{
+.tres {
   flex-grow: 1;
   min-width: 33%;
 }
@@ -43,14 +49,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
 }
 .container-pic {
   display: flex;
   width: 300px;
   position: relative;
   /* padding: 15px; */
-  justify-content: center
+  justify-content: center;
 }
 .fir-img {
   position: absolute;
