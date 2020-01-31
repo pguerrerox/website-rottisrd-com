@@ -12,7 +12,7 @@
     "deploy": " gh-pages -d dist --dotfiles"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.9.3",
+    "@nuxtjs/axios": "^5.9.4",
     "instafeed.js": "^1.4.1"
   },
   "devDependencies": {
