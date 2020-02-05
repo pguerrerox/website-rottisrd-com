@@ -1,8 +1,8 @@
 <template>
   <section class="main">
-    <Empleo />
-    <Info />
     <slideshow :slides="slides" :page="page" />
+    <Info />
+    <Empleo />
   </section>
 </template>
 

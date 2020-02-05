@@ -2,8 +2,7 @@
   <section class="forma-contacto">
     <div class="forma-container">
       <h2>
-        ¿En qué podemos
-        <strong>ayudarle</strong>?
+        ¿En qué podemos ayudarle?
       </h2>
 
       <div class="forma-text">
@@ -103,6 +102,9 @@ export default {
   width: 100%;
   /* max-width: 1440px; */
   /* margin: 0 20px; */
+}
+.forma-container h2{
+  font-weight: bold;
 }
 .forma-text {
   align-self: center;

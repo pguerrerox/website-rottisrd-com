@@ -1,6 +1,6 @@
 <template>
   <section class="info-informacion">
-    <h2>
+    <h2 class="bold">
       <strong>Puedes contactarnos</strong>, utilizando cualquiera de estos medios.
     </h2>
     <hr />
@@ -51,6 +51,9 @@ export default {};
 </script>
 
 <style scoped>
+.bold{
+  font-weight:bold;
+}
 .info-informacion {
   display: flex;
   flex-flow: column;
@@ -58,7 +61,7 @@ export default {};
 }
 h2 {
   text-align: center;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 .info-contacto {
   display: flex;

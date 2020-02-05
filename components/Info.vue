@@ -2,11 +2,11 @@
   <section class="info">
     <div class="info-header">
       <div class="header-wraper">
-        <h1 class="normal">
-          Gracias por su interes en
+        <h2 class="normal">
+          Gracias por su interés en
           <span>Fabrica Rottis</span>
-        </h1>
-        <h2>Sus comentarios o inquietudes son de gran importancia para nosotros.</h2>
+        </h2>
+        <h3>Sus comentarios o inquietudes son de gran importancia para nosotros.</h3>
       </div>
     </div>
     <hr />
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-h2 {
+h2, h3 {
   text-align: center;
 }
 .info {
@@ -55,6 +55,8 @@ h2 {
   margin: 50px 0;
 }
 .normal {
+  font-size: 2em;
+  font-weight:bold;
   font-family: "gotham";
   color: #666;
   margin: 0 0 30px 0;

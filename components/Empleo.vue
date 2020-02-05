@@ -3,8 +3,7 @@
     <div class="forma-container" :style="styleBG">
       <div class="forma-text">
         <h2>
-          ¿Quieres
-          <strong>trabajar</strong> con nosotros?
+          ¿Quieres trabajar con nosotros?
         </h2>
         <p>
           Usando el siguiente formulario podras enviarnos tu
@@ -106,9 +105,12 @@ export default {
   align-self: center;
   text-align: justify;
 }
+.forma-text h2{
+  font-weight:bold;
+}
 .forma-text h2,
 p {
-  color: #fff;
+  color: rgb(75, 75, 75);
 }
 .forma-wrapper {
   display: flex;
