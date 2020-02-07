@@ -6,12 +6,9 @@
         <h2>{{ h2 }}</h2>
       </div>
       <div :class="{ noMargin: imgs.length <= 0 }" class="sign-logos">
-        <img
-          v-for="img in imgs"
-          :key="img.id"
-          :src="require('~/assets/images/logos/' + img +'.webp')"
-          alt="Rottis Logo"
-        />
+       <a v-for="(img, index) in imgs" :key="img.id" :href="'/marcas/'+marcas[index]">
+        <img :src="require('~/assets/images/logos/' + img +'.webp')" alt="Rottis Logo"/>
+       </a>
       </div>
     </div>
   </section>
@@ -29,7 +26,8 @@ export default {
       idx: localData.id,
       h1: localData.h1,
       h2: localData.h2,
-      imgs: localData.imgs
+      imgs: localData.imgs,
+      marcas: ["rottis", "baruk", "nauj", "costero"],
     };
   }
 };
