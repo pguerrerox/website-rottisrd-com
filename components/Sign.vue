@@ -6,9 +6,9 @@
         <h2>{{ h2 }}</h2>
       </div>
       <div :class="{ noMargin: imgs.length <= 0 }" class="sign-logos">
-       <a v-for="(img, index) in imgs" :key="img.id" :href="'/marcas/'+marcas[index]">
-        <img :src="require('~/assets/images/logos/' + img +'.webp')" alt="Rottis Logo"/>
-       </a>
+        <a v-for="(img, index) in imgs" :key="img.id" :href="'/marcas/'+marcas[index]">
+          <img :src="require('~/assets/images/logos/' + img +'.webp')" alt="Rottis Logo" />
+        </a>
       </div>
     </div>
   </section>
@@ -27,7 +27,7 @@ export default {
       h1: localData.h1,
       h2: localData.h2,
       imgs: localData.imgs,
-      marcas: ["rottis", "baruk", "nauj", "costero"],
+      marcas: ["rottis", "baruk", "nauj", "costero"]
     };
   }
 };
@@ -72,5 +72,37 @@ export default {
 /* conditional styles */
 .noMargin {
   margin: 0 !important;
+}
+
+/* media query mobile */
+@media screen and (max-width: 425px) {
+  .sign {
+    max-height: 100%;
+  }
+  .sign-message h2 {
+    font-size: 1.2em;
+  }
+  .sign-logos {
+    flex-wrap: wrap;
+  }
+  .sign-logos img {
+    width: 150px;
+    height: auto;
+    padding: 10px 5px;
+  }
+}
+/* media query tablet */
+@media screen and (max-width: 768px) {
+  .sign {
+    max-height: 100%;
+  }
+  .sign-logos {
+    flex-wrap: wrap;
+  }
+  .sign-logos img {
+    width: 175px;
+    height: auto;
+    padding: 10px 15px;
+  }
 }
 </style>

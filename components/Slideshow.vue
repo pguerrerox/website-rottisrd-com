@@ -8,7 +8,7 @@
         v-on:click="slideshowPos = imgs.indexOf(img)"
         class="dots"
       ></div>
-    </div> -->
+    </div>-->
     <div class="images" v-if="!nonSlides">
       <img
         :src="require('~/assets/images/slideshow/'+ imgs[page] +'.webp')"
@@ -119,6 +119,14 @@ export default {
   }
   to {
     opacity: 1;
+  }
+}
+
+/* media query mobile */
+@media screen and (max-width: 425px) {
+  .images {
+    width: 100%;
+    height: 250px;
   }
 }
 </style>

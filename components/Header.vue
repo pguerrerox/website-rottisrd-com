@@ -2,7 +2,9 @@
   <header class="header">
     <div class="header-content">
       <div class="content-inner">
-        <nuxt-link to="/"><img :src="require('~/assets/images/'+logo+'.webp')" /></nuxt-link>
+        <nuxt-link to="/">
+          <img :src="require('~/assets/images/'+logo+'.webp')" />
+        </nuxt-link>
         <a class="burgermenu" id="burgermenu" href="javascript:void(0);" @click="openNav()">&#9776;</a>
       </div>
       <nav class="nav" :class="{menuOn: menuOn}">
@@ -22,18 +24,20 @@ export default {
   props: {
     logo: String
   },
-  data(){
-    return{
+  data() {
+    return {
       menuOn: false,
-      menuOff: true,
-    }
+      menuOff: true
+    };
   },
   methods: {
-    openNav(){
-      if (this.menuOn == false) this.menuOn = true
+    openNav() {
+      if (this.menuOn == false) this.menuOn = true;
       else this.menuOn = false;
 
-      setTimeout(()=>{this.menuOn = false},5000)
+      setTimeout(() => {
+        this.menuOn = false;
+      }, 5000);
     }
   }
 };
@@ -90,7 +94,7 @@ export default {
     justify-content: space-around;
     margin: 0;
   }
-  .content-inner{
+  .content-inner {
     position: relative;
     width: 100%;
     display: flex;
@@ -98,15 +102,17 @@ export default {
     align-items: center;
   }
   .header-content img {
-   width: 250px;
-   margin: 20px auto;
+    width: 250px;
+    margin: 20px auto;
   }
-  .nav{
+  .nav {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-height: 0;
-    transition: max-height 0.25s ease-in;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.25s ease-in;
   }
   .nav-link {
     padding: 15px 15px;
@@ -115,7 +121,7 @@ export default {
     text-transform: capitalize;
     color: #666666;
     border-right: none;
-    text-align: center
+    text-align: center;
   }
   .nav-link.nuxt-link-exact-active {
     color: #c00000;
@@ -129,9 +135,11 @@ export default {
     text-decoration: none;
     color: #c00000;
   }
-  .menuOn{
+  .menuOn {
     max-height: 500px !important;
-    transition: max-height 0.25s ease-in;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: all 0.25s ease-in;
   }
 }
 </style>
