@@ -70,4 +70,14 @@ h1 {
 .container-pic:hover .fir-img {
   opacity: 0;
 }
+
+/* media query mobile */
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 4em;
+  }
+  .container-pic {
+    width: 210px;
+  }
+}
 </style>

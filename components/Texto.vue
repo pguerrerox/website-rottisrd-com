@@ -84,4 +84,22 @@ export default {
   /* height: 450px; */
   overflow: hidden;
 }
+
+/* media query mobile */
+@media screen and (max-width: 425px) {
+  .texto-filosofia {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .texto-filosofia div {
+    width: 100%;
+  }
+  .texto-ilustracion img {
+    width: 100%;
+    height: auto;
+    /* margin: 50px auto; */
+    overflow: hidden;
+  }
+}
 </style>
