@@ -77,4 +77,55 @@ export default {
 .banner-content p >>> strong {
   color: #c00000;
 }
+
+/* media query tablet */
+@media screen and (max-width: 768px) {
+  .banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+  }
+  .banner-wraper {
+    left: 50%;
+    margin-left: -300px;
+  }
+  .banner-content p {
+    width: 75%;
+    padding: 0 30px;
+    text-align: justify;
+    font-size: 0.9em;
+  }
+  .banner-content p >>> strong {
+    color: #c00000;
+  }
+}
+/* media query mobile */
+@media screen and (max-width: 425px) {
+  .banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+  }
+  .banner-wraper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+  .banner-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+  }
+  .banner-content p {
+    width: 75%;
+    padding: 0 30px;
+    text-align: justify;
+    font-size: 0.9em;
+  }
+  .banner-content p >>> strong {
+    color: #c00000;
+  }
+}
 </style>
