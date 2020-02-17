@@ -1,12 +1,11 @@
 <template>
   <header class="header">
-    <!-- <div class="header-secundary"></div> -->
-
     <div class="header-content">
-      <nuxt-link to="/">
-        <img :src="require('~/assets/images/'+logo+'.webp')" />
-      </nuxt-link>
-      <nav class="nav">
+      <div class="content-inner">
+        <nuxt-link to="/"><img :src="require('~/assets/images/'+logo+'.webp')" /></nuxt-link>
+        <a class="burgermenu" id="burgermenu" href="javascript:void(0);" @click="openNav()">&#9776;</a>
+      </div>
+      <nav class="nav" :class="{menuOn: menuOn}">
         <nuxt-link class="nav-link" to="/">Inicio</nuxt-link>
         <nuxt-link class="nav-link" to="/nosotros">Sobre Nosotros</nuxt-link>
         <nuxt-link class="nav-link" to="/equipo">Nuestro Equipo</nuxt-link>
@@ -22,6 +21,18 @@
 export default {
   props: {
     logo: String
+  },
+  data(){
+    return{
+      menuOn: false,
+      menuOff: true,
+    }
+  },
+  methods: {
+    openNav(){
+      if (this.menuOn == false) this.menuOn = true
+      else this.menuOn = false;
+    }
   }
 };
 </script>
@@ -64,13 +75,60 @@ export default {
 .nav-link:hover {
   color: #c00000;
 }
-.header-secundary {
-  width: 100%;
-  height: 35px;
-  /* border-bottom: 2px solid #c00000; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.burgermenu {
+  display: none;
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .content-inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-content img {
+   width: 250px;
+   margin: 20px auto;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.25s ease-in;
+  }
+  .nav-link {
+    padding: 15px 15px;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #666666;
+    border-right: none;
+    text-align: center
+  }
+  .nav-link.nuxt-link-exact-active {
+    color: #c00000;
+    font-weight: bold;
+  }
+  .burgermenu {
+    position: absolute;
+    display: inline;
+    left: 90%;
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: #c00000;
+  }
+  .menuOn{
+    max-height: 500px !important;
+    transition: max-height 0.25s ease-in;
+  }
 }
 </style>
