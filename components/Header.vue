@@ -32,6 +32,8 @@ export default {
     openNav(){
       if (this.menuOn == false) this.menuOn = true
       else this.menuOn = false;
+
+      setTimeout(()=>{this.menuOn = false},5000)
     }
   }
 };
@@ -79,7 +81,7 @@ export default {
   display: none;
 }
 
-/* media query */
+/* media query tablet (1024px) and mobile (425px)*/
 @media screen and (max-width: 1024px) {
   .header-content {
     display: flex;
@@ -89,6 +91,7 @@ export default {
     margin: 0;
   }
   .content-inner{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;

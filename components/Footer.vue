@@ -140,4 +140,27 @@ export default {};
 .secundary-developer a:hover {
   color: rgb(76, 175, 80);
 }
+
+/* media query mobile */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+  }
+  .quater {
+    width: 75%;
+    padding: 15px 0;
+    border-right: none;
+    border-bottom: 2px solid #000;
+  }
+  .footer-content .quater:last-child {
+    border-right: none;
+    border-bottom: none;
+  }
+  .secundary-copyright p {
+    text-align: center;
+  }
+}
 </style>
