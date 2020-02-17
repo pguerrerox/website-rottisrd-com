@@ -89,4 +89,24 @@ h1 {
 .feed__comments span {
   padding: 0 7px;
 }
+
+/* media query tablet */
+@media screen and (max-width: 1024px) {
+  .instafeed {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .instagram__pics {
+    width: 25rem;
+    margin: 10px 0 !important;
+  }
+  .instafeed > :nth-child(3n-1) {
+    margin: 0;
+  }
+  .instafeed > :nth-child(n + 4) {
+    margin: 0;
+  }
+}
 </style>

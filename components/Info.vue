@@ -41,7 +41,8 @@ export default {
 </script>
 
 <style scoped>
-h2, h3 {
+h2,
+h3 {
   text-align: center;
 }
 .info {
@@ -56,7 +57,7 @@ h2, h3 {
 }
 .normal {
   font-size: 2em;
-  font-weight:bold;
+  font-weight: bold;
   font-family: "gotham";
   color: #666;
   margin: 0 0 30px 0;
@@ -78,5 +79,16 @@ h1 {
 .info-form,
 .info-contacto {
   width: 45%;
+}
+
+/* media query for mobile */
+@media screen and (max-width: 425px) {
+  .info-container {
+    flex-direction: column;
+  }
+  .info-form,
+  .info-contacto {
+    width: 90%;
+  }
 }
 </style>

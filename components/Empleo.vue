@@ -104,6 +104,7 @@ export default {
   width: 500px;
   align-self: center;
   text-align: justify;
+  margin: 15px;
 }
 .forma-text h2{
   font-weight:bold;
@@ -157,5 +158,21 @@ select:focus {
 .g-recaptcha {
   text-align: -webkit-center;
   margin: 5px auto 15px auto;
+}
+
+/* media query for mobile */
+@media screen and (max-width:425px){
+  .forma-empleo {
+  height: 100%;
+  padding: 50px 0 0 0;
+}
+  .forma-container {
+  flex-direction: column;
+  margin: 0;
+}
+.forma-text {
+  width: 95%;
+  /* padding: 15px; */
+}
 }
 </style>

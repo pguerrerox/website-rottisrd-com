@@ -63,4 +63,19 @@ p {
   height: 80%;
   border: 1px solid #c00;
 }
+
+/* media query for mobile */
+@media screen and (max-width: 425px) {
+  .info-negocios {
+    flex-direction: column;
+    height: 100%;
+  }
+  .negocios-internacionales,
+  .negocios-locales {
+    width: 95%;
+  }
+  .vertical-line {
+    width: 90%;
+  }
+}
 </style>
