@@ -83,4 +83,37 @@ export default {
   object-position: center;
   object-fit: cover;
 }
+
+/* media query tablet */
+@media screen and (max-width: 768px) {
+  .marcas-top {
+    flex-direction: column;
+  }
+  .marcas-top p {
+    min-width: 80vw;
+    max-width: 90vw;
+    margin: 10px;
+    font-size: larger;
+  }
+  .marcas-top img {
+    width: 90%;
+    height: auto;
+  }
+}
+/* media query mobile */
+@media screen and (max-width: 425px) {
+  .marcas-top {
+    flex-direction: column;
+  }
+  .marcas-top p {
+    min-width: 80vw;
+    max-width: 90vw;
+    margin: 10px;
+    font-size: larger;
+  }
+  .marcas-top img {
+    width: 90%;
+    height: auto;
+  }
+}
 </style>

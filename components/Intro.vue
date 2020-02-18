@@ -56,4 +56,22 @@ export default {
   max-width: 700px;
   text-align: justify;
 }
+
+/* media query for mobile */
+@media screen and (max-width: 425px) {
+  .intro-wrapper {
+    flex-direction: column;
+  }
+  .intro-logo img {
+    width: 90vw;
+  }
+  .intro-text {
+    max-width: 90vw;
+    text-align: justify;
+  }
+  .intro-logo,
+  .intro-text {
+    margin: 10px;
+  }
+}
 </style>

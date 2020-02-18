@@ -41,14 +41,15 @@ h1 {
 }
 .instagram__pics {
   position: relative;
-  width: 25rem;
+  width: 28vw;
+  margin: 5px;
 }
-.instafeed > :nth-child(3n-1) {
+/* .instafeed > :nth-child(3n-1) {
   margin: 0 25px;
 }
 .instafeed > :nth-child(n + 4) {
   margin: 25px 0 0 0;
-}
+} */
 .instagram__pics a {
   text-decoration: none;
   color: inherit;
@@ -99,14 +100,18 @@ h1 {
     justify-content: space-around;
   }
   .instagram__pics {
-    width: 25rem;
-    margin: 10px 0 !important;
+    width: 32vw;
   }
-  .instafeed > :nth-child(3n-1) {
-    margin: 0;
+}
+/* media query mobile */
+@media screen and (max-width: 425px) {
+  .instagram__pics {
+    width: 47vw;
   }
-  .instafeed > :nth-child(n + 4) {
-    margin: 0;
+}
+@media screen and (max-width: 320px) {
+  .instagram__pics {
+    width: 95vw;
   }
 }
 </style>

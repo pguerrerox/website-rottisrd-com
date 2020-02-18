@@ -56,7 +56,7 @@ h3 {
   font-size: 1.2em;
   color: #666;
   font-weight: normal;
-  margin: 5px 0;
+  margin: 5px;
 }
 p {
   font-size: 1em;

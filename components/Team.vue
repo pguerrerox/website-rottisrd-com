@@ -71,13 +71,24 @@ h1 {
   opacity: 0;
 }
 
+/* media query tablet */
+@media screen and (max-width: 1024px) {
+  .container-pic {
+    width: 33vw;
+  }
+}
 /* media query mobile */
 @media screen and (max-width: 425px) {
   h1 {
     font-size: 4em;
   }
   .container-pic {
-    width: 210px;
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-pic {
+    width: 90vw;
   }
 }
 </style>

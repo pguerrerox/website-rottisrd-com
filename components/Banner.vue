@@ -128,4 +128,29 @@ export default {
     color: #c00000;
   }
 }
+@media screen and (max-width: 320px) {
+  .banner-wraper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+  .banner-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    height: 80%;
+  }
+  .banner-content h1 {
+    font-size: 3em;
+  }
+  .banner-content p {
+    width: 75%;
+    padding: 0 30px;
+    text-align: justify;
+    font-size: 0.9em;
+  }
+  .banner-content p >>> strong {
+    color: #c00000;
+  }
+}
 </style>
