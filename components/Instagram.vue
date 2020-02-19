@@ -41,7 +41,7 @@ h1 {
 }
 .instagram__pics {
   position: relative;
-  width: 28vw;
+  width: 400px;
   margin: 5px;
 }
 /* .instafeed > :nth-child(3n-1) {
