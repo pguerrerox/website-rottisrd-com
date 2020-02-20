@@ -52,7 +52,7 @@ html {
 	font-family: 'Open Sans', sans-serif !important;
 }
 body {
-	background-image: url('/offline/fondoquesos.webp');
+	background-image: url('/offline/fondoquesos.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

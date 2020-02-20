@@ -7,7 +7,7 @@
       </div>
       <div :class="{ noMargin: imgs.length <= 0 }" class="sign-logos">
         <a v-for="(img, index) in imgs" :key="img.id" :href="'/marcas/'+marcas[index]">
-          <img :src="require('~/assets/images/logos/' + img +'.webp')" alt="Rottis Logo" />
+          <img :src="require('~/assets/images/logos/' + img +'.png')" alt="Rottis Logo" />
         </a>
       </div>
     </div>

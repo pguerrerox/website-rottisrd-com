@@ -1,10 +1,10 @@
 <template>
   <section class="banner-products">
     <div v-for="img in backgrounds" :key="img.id" class="products-wraper">
-      <img :src="require('~/assets/images/banners/productos/' +	img + '.webp')" />
+      <img :src="require('~/assets/images/banners/productos/' +	img + '.png')" />
       <div class="products-content">
         <img
-          :src="require('~/assets/images/logos/' + logos[marcas[backgrounds.indexOf(img)]].file + '.webp')"
+          :src="require('~/assets/images/logos/' + logos[marcas[backgrounds.indexOf(img)]].file + '.png')"
           class="content-logo"
         />
         <a

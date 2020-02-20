@@ -1,7 +1,7 @@
 <template>
   <section class="info-informacion">
     <h2 class="bold">
-      <strong>Puedes contactarnos</strong>, utilizando cualquiera de estos medios.
+      Para contactarnos
     </h2>
     <hr />
     <div class="info-contacto">

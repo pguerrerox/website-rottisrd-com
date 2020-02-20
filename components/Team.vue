@@ -4,11 +4,11 @@
     <div class="container">
       <div class="container-pic" :class="{tres: tres}" v-for="pic in pics" :key="pic.id">
         <img
-          :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-0.webp')"
+          :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-0.png')"
           class="fir-img"
         />
         <img
-          :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-1.webp')"
+          :src="require('~/assets/images/team/' + departamento +'/'+ pic +'-1.png')"
           class="sec-img"
         />
       </div>
@@ -60,11 +60,13 @@ h1 {
 .fir-img {
   position: absolute;
   width: inherit;
+  height: 100%;
   z-index: 2;
   transition: opacity 0.25s;
 }
 .sec-img {
   width: inherit;
+  height: 100%;
   z-index: 1;
 }
 .container-pic:hover .fir-img {

@@ -11,13 +11,13 @@
     </div>-->
     <div class="images" v-if="!nonSlides">
       <img
-        :src="require('~/assets/images/slideshow/'+ imgs[page] +'.webp')"
+        :src="require('~/assets/images/slideshow/'+ imgs[page] +'.png')"
         class="slides-imgs fade"
       />
       <!-- v-for="img in imgs" :key="img.id" v-show="slideshowPos === imgs.indexOf(img)"  -->
     </div>
     <div class="images" v-if="nonSlides">
-      <img :src="require('~/assets/images/fijas/'+ fijas[marca] +'.webp')" class="slides-imgs fade" />
+      <img :src="require('~/assets/images/fijas/'+ fijas[marca] +'.png')" class="slides-imgs fade" />
     </div>
   </section>
 </template>

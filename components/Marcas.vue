@@ -4,12 +4,12 @@
       <div class="marcas-top" :class="{ reverse: item.index % 2 != 0}">
         <p v-html="item.info"></p>
         <img
-          :src="require('~/assets/images/productShots/' + productShot[marca][item.index] +	'.webp')"
+          :src="require('~/assets/images/productShots/' + productShot[marca][item.index] +	'.png')"
         />
       </div>
       <div class="marcas-ilustracion">
         <img
-          :src="require('~/assets/images/banners/marcas/' + banners[marca][item.index] +	'.webp')"
+          :src="require('~/assets/images/banners/marcas/' + banners[marca][item.index] +	'.png')"
         />
       </div>
     </div>

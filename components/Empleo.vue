@@ -65,7 +65,7 @@ export default {
     let bgBaseUrl = media.banners.contacto.empleoBG;
     return {
       referrer: document.URL,
-      bgPath: require("~/assets/images/banners/contacto/" + bgBaseUrl + ".webp")
+      bgPath: require("~/assets/images/banners/contacto/" + bgBaseUrl + ".png")
     };
   },
   computed: {

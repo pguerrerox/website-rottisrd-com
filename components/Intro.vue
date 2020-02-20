@@ -2,7 +2,7 @@
   <section class="intro">
     <div class="intro-wrapper">
       <div class="intro-logo">
-        <img :src="require('~/assets/images/logos/' + logo + '.webp')" />
+        <img :src="require('~/assets/images/logos/' + logo + '.png')" />
       </div>
       <div class="intro-text">
         <h3 v-html="data"></h3>

@@ -3,7 +3,7 @@
     <div class="header-content">
       <div class="content-inner">
         <nuxt-link to="/">
-          <img :src="require('~/assets/images/'+logo+'.webp')" />
+          <img :src="require('~/assets/images/'+logo+'.png')" />
         </nuxt-link>
         <a class="burgermenu" id="burgermenu" href="javascript:void(0);" @click="openNav()">&#9776;</a>
       </div>
