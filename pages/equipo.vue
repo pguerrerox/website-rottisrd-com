@@ -22,6 +22,7 @@ import seguridadInfo from "~/data/team/seguridad.json";
 import Team from "~/components/Team";
 
 export default {
+  transition: 'fade',
   components: {
     Team
   },

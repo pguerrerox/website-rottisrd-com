@@ -19,6 +19,7 @@ import Sign from "~/components/Sign.vue";
 import Banner from "~/components/Banner.vue";
 
 export default {
+  transition: 'fade',
   components: {
     Slideshow,
     Sign,

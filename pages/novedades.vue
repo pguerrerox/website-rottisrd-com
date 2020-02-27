@@ -1,5 +1,5 @@
 <template>
-  <Instagram />
+  <Instagram class="main" />
 </template>
 
 <script>

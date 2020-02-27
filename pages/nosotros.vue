@@ -19,6 +19,7 @@ import Slideshow from "~/components/Slideshow.vue";
 import Texto from "~/components/Texto.vue";
 
 export default {
+  transition: 'fade',
   components: {
     Slideshow,
     Texto

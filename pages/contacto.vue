@@ -17,6 +17,7 @@ import Form from "~/components/Form.vue";
 import Empleo from "~/components/Empleo.vue";
 
 export default {
+  transition: 'fade',
   head() {
     return {
       script: [{ src: "https://www.google.com/recaptcha/api.js" }]

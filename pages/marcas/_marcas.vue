@@ -17,6 +17,7 @@ import Intro from "~/components/Intro.vue";
 import Marcas from "~/components/Marcas.vue";
 
 export default {
+  transition: 'fade',
   components: {
     Slideshow,
     Intro,

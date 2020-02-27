@@ -81,4 +81,11 @@ a.button:hover,
   border-left: 2px solid #c00000;
   color: #c00000;
 }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.25s ease-in;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}
+
 </style>

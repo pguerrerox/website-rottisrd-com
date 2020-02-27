@@ -17,6 +17,7 @@ import Sign from "~/components/Sign.vue";
 import Products from "~/components/Products.vue";
 
 export default {
+  transition: 'fade',
   components: {
     Slideshow,
     Sign,
