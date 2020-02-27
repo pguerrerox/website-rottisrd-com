@@ -17,7 +17,7 @@ let feed = new Instafeed({
   template:
     '<div class="instagram__pics">  <a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" />  <div class="info__feed">  <div class="feed__likes"><img class="social-logo" src="/icons/likes.png" alt="like icon"/><span>{{likes}}</span></div>  <div class="feed__comments"><img class="social-logo" src="/icons/comments.png" alt="comments icon"/><span>{{comments}}</span></div>  </div>  </a>  </div>'
 });
-feed.run();
+// feed.run();
 
 export default {
   beforeMount: function() {

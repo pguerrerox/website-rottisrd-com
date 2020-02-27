@@ -32,8 +32,7 @@ export default {
   background: #ffffff;
 }
 .tres {
-  flex-grow: 1;
-  min-width: 33%;
+  margin: 0 calc(75% - (3 * 300px))
 }
 h1 {
   font-size: 6em;
@@ -44,28 +43,28 @@ h1 {
 }
 .container {
   width: 100%;
-  height: 100%;
   padding: 0 0 25px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .container-pic {
-  display: flex;
-  width: 300px;
-  position: relative;
-  /* padding: 15px; */
-  justify-content: center;
+    display: flex;
+    width: 300px;
+    height: auto;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
 .fir-img {
   position: absolute;
-  width: inherit;
+  width: 100%;
   height: 100%;
   z-index: 2;
   transition: opacity 0.25s;
 }
 .sec-img {
-  width: inherit;
+  width: 100%;
   height: 100%;
   z-index: 1;
 }
@@ -77,6 +76,7 @@ h1 {
 @media screen and (max-width: 1024px) {
   .container-pic {
     width: 33vw;
+    margin: 0;
   }
 }
 /* media query mobile */
