@@ -30,14 +30,14 @@
       <div class="quater">
         <h3>Redes Sociales</h3>
         <div class="info">
-          <a href="#">
+          <a href="https://www.facebook.com/quesosrottisrd" target="_blank">
             <img
               class="social-logo"
               src="~/assets/images/socialmedia/facebook.png"
               alt="facebook logo"
             />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/quesosrottisrd/" target="_blank">
             <img
               class="social-logo"
               src="~/assets/images/socialmedia/instagram.png"
