@@ -25,12 +25,14 @@ export default {
   },
   ...routerBase,
   generate: {
+    fallback: true,
     routes: [
       '/marcas/rottis',
       '/marcas/baruk',
       '/marcas/nauj',
       '/marcas/costero'
-    ]
+    ],
+    subFolders: false
   },
   /*
   ** Customize the progress-bar color
