@@ -55,7 +55,7 @@
       <div class="secundary-developer">
         <p class="duramente">
           Developed by
-          <a href="#" target="_blank">Duramente Web Studio</a>
+          <a href="https://duramente.com" target="_blank">Duramente Web Studio</a>
         </p>
       </div>
     </div>
